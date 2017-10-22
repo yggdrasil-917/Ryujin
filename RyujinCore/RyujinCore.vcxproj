@@ -167,6 +167,7 @@
     <ClInclude Include="Allocators\RingBuffer.hpp" />
     <ClInclude Include="Allocators\TBBAllocator.hpp" />
     <ClInclude Include="Containers\ArrayView.hpp" />
+    <ClInclude Include="Containers\BinaryTree.hpp" />
     <ClInclude Include="Containers\Bitfield.hpp" />
     <ClInclude Include="Containers\DynamicArray.hpp" />
     <ClInclude Include="Containers\FixedArray.hpp" />
@@ -209,6 +210,7 @@
     <ClInclude Include="Math\Frustum.hpp" />
     <ClInclude Include="Math\Math.hpp" />
     <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\PhysicsUtils.hpp" />
     <ClInclude Include="Math\Plane.hpp" />
     <ClInclude Include="Math\Transform.hpp" />
     <ClInclude Include="OS\Application.hpp" />
@@ -248,6 +250,7 @@
     <ClCompile Include="Input\HIDManager.cpp" />
     <ClCompile Include="Input\HIDManagerWindows.cpp" />
     <ClCompile Include="Input\Keyboard.cpp" />
+    <ClCompile Include="Input\Mouse.cpp" />
     <ClCompile Include="Logger\Logger.cpp" />
     <ClCompile Include="Logger\LoggerPolicies.cpp" />
     <ClCompile Include="Math\AABB.cpp" />

@@ -13,6 +13,9 @@
     <Filter Include="Audio">
       <UniqueIdentifier>{2ef67272-928d-44f4-9f73-80a7facbb1e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{7a95d11e-4959-481e-8e3f-96960529e17b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssetManagement\AssetRegistry.cpp">
@@ -44,6 +47,24 @@
     </ClCompile>
     <ClCompile Include="Audio\OpenALDevice.cpp">
       <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManagement\AudioResource.cpp">
+      <Filter>AssetManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManagement\ContentPackage.cpp">
+      <Filter>AssetManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ControllerBase.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\PlayerController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitySystem\MeshComponent.cpp">
+      <Filter>EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\DOTExporter.cpp">
+      <Filter>Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +103,24 @@
     </ClInclude>
     <ClInclude Include="Audio\OpenALDevice.hpp">
       <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManagement\AudioResource.hpp">
+      <Filter>AssetManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManagement\ContentPackage.hpp">
+      <Filter>AssetManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ControllerBase.hpp">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\PlayerController.hpp">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitySystem\MeshComponent.hpp">
+      <Filter>EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DOTExporter.hpp">
+      <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

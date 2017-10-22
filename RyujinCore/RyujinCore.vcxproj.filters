@@ -264,6 +264,12 @@
     <ClInclude Include="Profiler\ChromeProfiler.hpp">
       <Filter>Profiler</Filter>
     </ClInclude>
+    <ClInclude Include="Containers\BinaryTree.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PhysicsUtils.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Allocators\Allocator.cpp">
@@ -367,6 +373,9 @@
     </ClCompile>
     <ClCompile Include="Profiler\ChromeProfiler.cpp">
       <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Mouse.cpp">
+      <Filter>Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

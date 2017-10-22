@@ -20,26 +20,38 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssetManagement\AssetRegistry.cpp" />
+    <ClCompile Include="AssetManagement\AudioResource.cpp" />
+    <ClCompile Include="AssetManagement\ContentPackage.cpp" />
     <ClCompile Include="AssetManagement\ResourceFactory.cpp" />
     <ClCompile Include="Audio\AudioDevice.cpp" />
     <ClCompile Include="Audio\AudioUtils.cpp" />
     <ClCompile Include="Audio\OpenALDevice.cpp" />
+    <ClCompile Include="Controller\ControllerBase.cpp" />
+    <ClCompile Include="Controller\PlayerController.cpp" />
     <ClCompile Include="EntitySystem\Component.cpp" />
     <ClCompile Include="EntitySystem\Entity.cpp" />
+    <ClCompile Include="EntitySystem\MeshComponent.cpp" />
     <ClCompile Include="EntitySystem\TransformComponent.cpp" />
+    <ClCompile Include="Utils\DOTExporter.cpp" />
     <ClCompile Include="Utils\SymbolLocator.cpp" />
     <ClCompile Include="Utils\Tickable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManagement\AssetRegistry.hpp" />
+    <ClInclude Include="AssetManagement\AudioResource.hpp" />
+    <ClInclude Include="AssetManagement\ContentPackage.hpp" />
     <ClInclude Include="AssetManagement\Resource.hpp" />
     <ClInclude Include="AssetManagement\ResourceFactory.hpp" />
     <ClInclude Include="Audio\AudioDevice.hpp" />
     <ClInclude Include="Audio\AudioUtils.hpp" />
     <ClInclude Include="Audio\OpenALDevice.hpp" />
+    <ClInclude Include="Controller\ControllerBase.hpp" />
+    <ClInclude Include="Controller\PlayerController.hpp" />
     <ClInclude Include="EntitySystem\Component.hpp" />
     <ClInclude Include="EntitySystem\Entity.hpp" />
+    <ClInclude Include="EntitySystem\MeshComponent.hpp" />
     <ClInclude Include="EntitySystem\TransformComponent.hpp" />
+    <ClInclude Include="Utils\DOTExporter.hpp" />
     <ClInclude Include="Utils\ExtensionsBase.hpp" />
     <ClInclude Include="Utils\SymbolLocator.hpp" />
     <ClInclude Include="Utils\Tickable.hpp" />

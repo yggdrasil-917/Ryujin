@@ -29,7 +29,10 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
+
+#if !PLATFORM_WINDOWS
 #include <copyfile.h>
+#endif
 
 namespace Ryujin
 {
@@ -191,6 +194,12 @@ namespace Ryujin
         
         static bool Copy(const char* fileNameFrom, const char* fileNameTo)
         {
+#if PLATFORM_WINDOWS
+			if (CopyFileA(fileNameFrom, fileNameTo, FALSE))
+				return true;
+
+			return false;
+#else
             copyfile_state_t state = copyfile_state_alloc();
             int32 r = copyfile(fileNameFrom, fileNameTo, state, COPYFILE_ALL);
             int32 bWasCopied = false;
@@ -202,6 +211,7 @@ namespace Ryujin
             
             copyfile_state_free(state);
             return false;
+#endif
         }
         
         static PtrSize FileSize(FileHandle handle)
@@ -439,6 +449,8 @@ namespace Ryujin
         
         static bool CopyAllFiles(String sorc, String dest)
         {
+#if PLATFORM_WINDOWS
+#else
             DIR *dir;
             struct dirent *ent;
             if ((dir = opendir (*sorc)) != NULL)
@@ -463,6 +475,7 @@ namespace Ryujin
             {
                 return false;
             }
+#endif
             
             return true;
         }
