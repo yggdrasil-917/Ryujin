@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Allocators">
+      <UniqueIdentifier>{f95afa6b-61f5-4f2e-9812-b39f0ed9bfe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{42c094b1-cd22-4727-b4b5-51739fc86072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreUtils">
+      <UniqueIdentifier>{a30f729e-b561-438e-9532-e1b1cdbfedfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{3639c820-cb6e-4632-9b58-88a45c769b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{a3d69d7c-a87c-4f3e-ba47-48131ee64b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{cdc2fe56-263d-4b40-998e-068a529b5db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS">
+      <UniqueIdentifier>{8aafdf7a-a345-4b9a-9500-ace9137e3c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler">
+      <UniqueIdentifier>{04061bb0-2986-4dd7-b54b-af6060cd6654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{b0a82f4e-1432-4ddc-8164-40021aff030b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{706a78a2-5ba7-4128-9f49-b1ca0a8d8e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{6f968baf-d36d-4346-9eb8-753aa204f4d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Allocators\Allocator.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\AnsiAllocator.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\GlobalAllocators.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\LinearAllocator.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\LinearAllocatorMemMark.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\Memory.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\MemoryPool.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\MemoryTrackingPolicies.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\RingBuffer.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocators\TBBAllocator.hpp">
+      <Filter>Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Bitfield.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\DynamicArray.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\FixedArray.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\HashTable.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\List.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Queue.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\SlotArray.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\SparseArray.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Stack.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\StackArray.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\String.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\BinaryReader.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\BinaryWriter.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\Common.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\ConfigCache.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\CRC.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\Delegate.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\ICallback.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\Json.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\MethodCallback.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\ServiceLocator.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\Singleton.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\SmartEnum.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\SmartPointer.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\StaticFunctionCallback.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\StringHash.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\Timer.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Events.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keyboard.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keycode.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Mouse.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Scancode.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\Logger.hpp">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\LoggerPolicies.hpp">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Frustum.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Viewport.hpp">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Window.hpp">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\JobSystem.hpp">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\Semaphore.hpp">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\Thread.hpp">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\WorkStealingQueue.hpp">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler\Profiler.hpp">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\Application.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\FileSystem.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\Macros.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\Platform.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\Process.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\Types.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowWindows.hpp">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\Fiber.hpp">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreUtils\ObjectListener.hpp">
+      <Filter>CoreUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="OS\StackTrace.hpp">
+      <Filter>OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\HIDManager.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\HIDManagerWindows.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\BinaryFilePupper.hpp">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Pupper.hpp">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\TextFilePupper.hpp">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\ArrayView.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler\PixProfiler.hpp">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler\ChromeProfiler.hpp">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Allocators\Allocator.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocators\GlobalAllocators.cpp">
+      <Filter>Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers\String.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\BinaryReader.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\BinaryWriter.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\ConfigCache.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\Json.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\ServiceLocator.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreUtils\Timer.cpp">
+      <Filter>CoreUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Events.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\EventsWindows.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Keyboard.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\LoggerPolicies.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Frustum.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Transform.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Viewport.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\JobSystem.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\Thread.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\WorkStealingQueue.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler\Profiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="OS\Platform.cpp">
+      <Filter>OS</Filter>
+    </ClCompile>
+    <ClCompile Include="OS\Dllmain.cpp">
+      <Filter>OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\WindowWindows.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\Fiber.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\HIDManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\HIDManagerWindows.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\BinaryFilePupper.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Pupper.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\TextFilePupper.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="OS\ApplicationWindows.cpp">
+      <Filter>OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler\PixProfiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler\ChromeProfiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Math\MatrixSpecialization.inl">
+      <Filter>Math</Filter>
+    </None>
+    <None Include="Math\VectorSpecialization.inl">
+      <Filter>Math</Filter>
+    </None>
+  </ItemGroup>
+</Project>

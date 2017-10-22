@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F309460-ABA2-46D3-889D-A5841FDFD9A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RyujinCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(ProjectDir)..\ThirdParty\tbb\include;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(SolutionDir);$(ProjectDir)..\ThirdParty\tbb\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RYUJINCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;USE_TBB=1;DEBUG=1;_USRDLL;RYUJINCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tbb_debug.lib;tbbmalloc_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RYUJINCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;USE_TBB=1;_USRDLL;RYUJINCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+      <AdditionalOptions>/analyze:stacksize1048576 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tbb.lib;tbbmalloc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Allocators\Allocator.hpp" />
+    <ClInclude Include="Allocators\AnsiAllocator.hpp" />
+    <ClInclude Include="Allocators\GlobalAllocators.hpp" />
+    <ClInclude Include="Allocators\LinearAllocator.hpp" />
+    <ClInclude Include="Allocators\LinearAllocatorMemMark.hpp" />
+    <ClInclude Include="Allocators\Memory.hpp" />
+    <ClInclude Include="Allocators\MemoryPool.hpp" />
+    <ClInclude Include="Allocators\MemoryTrackingPolicies.hpp" />
+    <ClInclude Include="Allocators\RingBuffer.hpp" />
+    <ClInclude Include="Allocators\TBBAllocator.hpp" />
+    <ClInclude Include="Containers\ArrayView.hpp" />
+    <ClInclude Include="Containers\Bitfield.hpp" />
+    <ClInclude Include="Containers\DynamicArray.hpp" />
+    <ClInclude Include="Containers\FixedArray.hpp" />
+    <ClInclude Include="Containers\HashTable.hpp" />
+    <ClInclude Include="Containers\List.hpp" />
+    <ClInclude Include="Containers\Queue.hpp" />
+    <ClInclude Include="Containers\SlotArray.hpp" />
+    <ClInclude Include="Containers\SparseArray.hpp" />
+    <ClInclude Include="Containers\Stack.hpp" />
+    <ClInclude Include="Containers\StackArray.hpp" />
+    <ClInclude Include="Containers\String.hpp" />
+    <ClInclude Include="CoreUtils\BinaryReader.hpp" />
+    <ClInclude Include="CoreUtils\BinaryWriter.hpp" />
+    <ClInclude Include="CoreUtils\Common.hpp" />
+    <ClInclude Include="CoreUtils\ConfigCache.hpp" />
+    <ClInclude Include="CoreUtils\CRC.hpp" />
+    <ClInclude Include="CoreUtils\Delegate.hpp" />
+    <ClInclude Include="CoreUtils\ICallback.hpp" />
+    <ClInclude Include="CoreUtils\Json.hpp" />
+    <ClInclude Include="CoreUtils\ObjectListener.hpp" />
+    <ClInclude Include="CoreUtils\MethodCallback.hpp" />
+    <ClInclude Include="CoreUtils\ServiceLocator.hpp" />
+    <ClInclude Include="CoreUtils\Singleton.hpp" />
+    <ClInclude Include="CoreUtils\SmartEnum.hpp" />
+    <ClInclude Include="CoreUtils\SmartPointer.hpp" />
+    <ClInclude Include="CoreUtils\StaticFunctionCallback.hpp" />
+    <ClInclude Include="CoreUtils\StringHash.hpp" />
+    <ClInclude Include="CoreUtils\Timer.hpp" />
+    <ClInclude Include="Input\Events.hpp" />
+    <ClInclude Include="Input\HIDManager.hpp" />
+    <ClInclude Include="Input\HIDManagerWindows.hpp" />
+    <ClInclude Include="Input\Input.hpp" />
+    <ClInclude Include="Input\Keyboard.hpp" />
+    <ClInclude Include="Input\Keycode.hpp" />
+    <ClInclude Include="Input\Mouse.hpp" />
+    <ClInclude Include="Input\Scancode.hpp" />
+    <ClInclude Include="Logger\Logger.hpp" />
+    <ClInclude Include="Logger\LoggerPolicies.hpp" />
+    <ClInclude Include="Math\AABB.hpp" />
+    <ClInclude Include="Math\Frustum.hpp" />
+    <ClInclude Include="Math\Math.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\Plane.hpp" />
+    <ClInclude Include="Math\Transform.hpp" />
+    <ClInclude Include="OS\Application.hpp" />
+    <ClInclude Include="OS\FileSystem.hpp" />
+    <ClInclude Include="OS\Macros.hpp" />
+    <ClInclude Include="OS\Platform.hpp" />
+    <ClInclude Include="OS\Process.hpp" />
+    <ClInclude Include="OS\StackTrace.hpp" />
+    <ClInclude Include="OS\Types.hpp" />
+    <ClInclude Include="Profiler\ChromeProfiler.hpp" />
+    <ClInclude Include="Profiler\PixProfiler.hpp" />
+    <ClInclude Include="Profiler\Profiler.hpp" />
+    <ClInclude Include="Serialization\BinaryFilePupper.hpp" />
+    <ClInclude Include="Serialization\Pupper.hpp" />
+    <ClInclude Include="Serialization\TextFilePupper.hpp" />
+    <ClInclude Include="Threading\Fiber.hpp" />
+    <ClInclude Include="Threading\JobSystem.hpp" />
+    <ClInclude Include="Threading\Semaphore.hpp" />
+    <ClInclude Include="Threading\Thread.hpp" />
+    <ClInclude Include="Threading\WorkStealingQueue.hpp" />
+    <ClInclude Include="Window\Viewport.hpp" />
+    <ClInclude Include="Window\Window.hpp" />
+    <ClInclude Include="Window\WindowWindows.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Allocators\Allocator.cpp" />
+    <ClCompile Include="Allocators\GlobalAllocators.cpp" />
+    <ClCompile Include="Containers\String.cpp" />
+    <ClCompile Include="CoreUtils\BinaryReader.cpp" />
+    <ClCompile Include="CoreUtils\BinaryWriter.cpp" />
+    <ClCompile Include="CoreUtils\ConfigCache.cpp" />
+    <ClCompile Include="CoreUtils\Json.cpp" />
+    <ClCompile Include="CoreUtils\ServiceLocator.cpp" />
+    <ClCompile Include="CoreUtils\Timer.cpp" />
+    <ClCompile Include="Input\Events.cpp" />
+    <ClCompile Include="Input\EventsWindows.cpp" />
+    <ClCompile Include="Input\HIDManager.cpp" />
+    <ClCompile Include="Input\HIDManagerWindows.cpp" />
+    <ClCompile Include="Input\Keyboard.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
+    <ClCompile Include="Logger\LoggerPolicies.cpp" />
+    <ClCompile Include="Math\AABB.cpp" />
+    <ClCompile Include="Math\Frustum.cpp" />
+    <ClCompile Include="Math\Transform.cpp" />
+    <ClCompile Include="OS\ApplicationWindows.cpp" />
+    <ClCompile Include="OS\Dllmain.cpp" />
+    <ClCompile Include="OS\Platform.cpp" />
+    <ClCompile Include="Profiler\ChromeProfiler.cpp" />
+    <ClCompile Include="Profiler\PixProfiler.cpp" />
+    <ClCompile Include="Profiler\Profiler.cpp" />
+    <ClCompile Include="Serialization\BinaryFilePupper.cpp" />
+    <ClCompile Include="Serialization\Pupper.cpp" />
+    <ClCompile Include="Serialization\TextFilePupper.cpp" />
+    <ClCompile Include="Threading\Fiber.cpp" />
+    <ClCompile Include="Threading\JobSystem.cpp" />
+    <ClCompile Include="Threading\Thread.cpp" />
+    <ClCompile Include="Threading\WorkStealingQueue.cpp" />
+    <ClCompile Include="Window\Viewport.cpp" />
+    <ClCompile Include="Window\WindowWindows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Math\MatrixSpecialization.inl" />
+    <None Include="Math\VectorSpecialization.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
