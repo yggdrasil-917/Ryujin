@@ -1,0 +1,94 @@
+
+
+#include "../Renderer/ShaderCommon.hpp"
+
+
+
+
+
+struct ColoredVertex
+{
+    float4 position POS_SEMANTIC;
+    float4 color;
+};
+
+struct V2F
+{
+    float4 position POS_SEMANTIC;
+    float2 uv;
+};
+
+struct V2FBasic
+{
+    float4 position POS_SEMANTIC;
+};
+
+VERTEX_ENTRY V2FBasic vertex_basic(constant VertexIn* vertices VERTEX_BUFFER,
+                               constant PerObjectCB& uniforms MESH_CB,
+                               constant PerFrameCB& perFrameCB FRAME_CB,
+                               uint vid VERTEX_ID)
+{
+    V2FBasic o;
+    o.position = perFrameCB.viewProjection * uniforms.worldMatrix * vertices[vid].position;
+    return o;
+}
+
+FRAG_ENTRY float4 fragment_basic(INPUT(V2FBasic vert), constant Uniform& uniforms MESH_CB)
+{
+    return uniforms.color;
+}
+
+VERTEX_ENTRY ColoredVertex vertex_main(constant VertexIn* vertices VERTEX_BUFFER,
+                                       constant PerObjectCB& uniforms MESH_CB,
+                                       constant PerFrameCB& perFrameCB FRAME_CB,
+                                       uint vid VERTEX_ID)
+{
+    ColoredVertex vert;
+    vert.position = perFrameCB.viewProjection * uniforms.worldMatrix * vertices[vid].position;
+    vert.color = vertices[vid].color; 
+    return vert;
+}
+
+FRAG_ENTRY float4 fragment_main(INPUT(ColoredVertex vert))
+{
+    return vert.color;
+}
+
+
+VERTEX_ENTRY V2F vertex_textured(constant VertexBase* vertices VERTEX_BUFFER,
+                                   constant PerObjectCB& uniforms MESH_CB,
+                                   constant PerFrameCB& perFrameCB FRAME_CB,
+                                   uint vid VERTEX_ID)
+{
+    V2F vert;
+    vert.position = perFrameCB.viewProjection * uniforms.worldMatrix * vertices[vid].position;
+    vert.uv = vertices[vid].uv;
+    return vert;
+}
+
+
+
+FRAG_ENTRY float4 fragment_textured(INPUT(V2F vert),
+                                    DECLARE_TEX2D(diffuse, float, 0))
+{
+    return SAMPLE_TEX2D(diffuse, vert.uv);
+}
+
+VERTEX_ENTRY ColoredVertex skyboxVertex(constant VertexIn* vertices VERTEX_BUFFER,
+                              constant PerFrameCB& perFrameCB FRAME_CB,
+                              uint vid VERTEX_ID)
+{
+    float4 position = vertices[vid].position;
+    
+    ColoredVertex outVert;
+    outVert.position = perFrameCB.viewProjection * vertices[vid].position;
+    outVert.color.xyz = (position.xyz - perFrameCB.cameraWorldPosition);
+    return outVert;
+}
+
+FRAG_ENTRY half4 skyboxFragment(INPUT(ColoredVertex vert),
+                                DECLARE_TEXCUBE(skybox, half, 0))
+{
+    float3 texCoords = float3(vert.color.x, vert.color.y, -vert.color.z);
+    return SAMPLE_TEXCUBE(skybox, texCoords);
+}

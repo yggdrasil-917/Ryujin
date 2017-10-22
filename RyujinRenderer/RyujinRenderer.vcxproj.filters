@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{6400fbc4-6038-4393-847f-f5f04672fbd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderUtils">
+      <UniqueIdentifier>{2af4d612-755e-4b8a-b39a-e31c13822596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vulkan">
+      <UniqueIdentifier>{84c0cf5f-646b-47e6-b976-37c5e85515f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RenderUtils\Image.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils\ImporterRmf.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils\ImporterWavefront.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils\VertexWriter.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Model.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RendererCommands.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\SceneView.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\VertexFormat.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Visibility.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanDevice.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanLoader.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanRenderResourceFactory.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanBase.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RenderUtils\Image.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\ImporterRmf.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\ImporterWavefront.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\MeshImporter.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\VertexWriter.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Buffers.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\CommandBucket.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderCommandSortKey.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Renderer.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererCommands.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererCommon.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererConfig.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderResourceFactory.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SceneView.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Textures.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertexFormat.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Visibility.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanBase.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanDevice.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanTextures.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanBuffers.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererBase.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanRendererCommon.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderResources.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanPipelineStateConfig.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Renderer\CommandBucket.inl">
+      <Filter>Renderer</Filter>
+    </None>
+    <None Include="Vulkan\VulkanFunctionList.inl">
+      <Filter>Vulkan</Filter>
+    </None>
+  </ItemGroup>
+</Project>

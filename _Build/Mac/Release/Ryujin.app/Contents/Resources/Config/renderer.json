@@ -1,0 +1,27 @@
+{
+    "renderTargets2D": [
+        {
+            "format": "BGRA8Unorm",
+            "name": "Scene Color",
+            "scaleFactor": 1
+        },
+        {
+            "format": "Depth32Float",
+            "name": "Scene Depth",
+            "scaleFactor": 1
+        },
+        {
+            "format": "RGBA8Unorm",
+            "name": "Scene Color 2",
+            "scaleFactor": 1
+        }
+    ],
+
+    "renderTargetsCube": [
+        {
+            "format": "RGBA8Unorm",
+            "name": "Cube Test",
+            "scaleFactor": 4
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		47D202D01C8611CE00F253EF /* Ryujin Tools */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 47D202D11C8611CE00F253EF /* Build configuration list for PBXAggregateTarget "Ryujin Tools" */;
+			buildPhases = (
+			);
+			dependencies = (
+				47D202D51C86126000F253EF /* PBXTargetDependency */,
+			);
+			name = "Ryujin Tools";
+			productName = "Ryujin Tools";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		47414BAB1F64715C001C04B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471A41751F5CD1AB0032F747 /* RyujinShaderCompiler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 471A417E1F5CD4170032F747;
+			remoteInfo = RyujinShaderCompiler;
+		};
+		4749ED3F1CAB470900F12506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4749ED3B1CAB470800F12506 /* RyujinDataCompiler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4749ED311CAB470800F12506;
+			remoteInfo = RyujinDataCompiler;
+		};
+		47A80CA51E2C660200101850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47A80CA01E2C660000101850 /* RyujinUnitTesting.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47A80C961E2C660000101850;
+			remoteInfo = RyujinUnitTesting;
+		};
+		47D202BD1C8550FD00F253EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D202B91C8550FC00F253EF /* RyujinCooker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47D202AF1C8550FC00F253EF;
+			remoteInfo = RyujinCooker;
+		};
+		47D202D41C86126000F253EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D202B91C8550FC00F253EF /* RyujinCooker.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D202AE1C8550FC00F253EF;
+			remoteInfo = RyujinCooker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		471A41751F5CD1AB0032F747 /* RyujinShaderCompiler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RyujinShaderCompiler.xcodeproj; path = RyujinShaderCompiler/RyujinShaderCompiler.xcodeproj; sourceTree = "<group>"; };
+		4749ED3B1CAB470800F12506 /* RyujinDataCompiler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RyujinDataCompiler.xcodeproj; path = RyujinDataCompiler/RyujinDataCompiler.xcodeproj; sourceTree = "<group>"; };
+		47A80CA01E2C660000101850 /* RyujinUnitTesting.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RyujinUnitTesting.xcodeproj; path = RyujinUnitTesting/RyujinUnitTesting.xcodeproj; sourceTree = "<group>"; };
+		47D202B91C8550FC00F253EF /* RyujinCooker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RyujinCooker.xcodeproj; path = RyujinCooker/RyujinCooker.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		471A41761F5CD1AB0032F747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47414BAC1F64715C001C04B2 /* RyujinShaderCompiler */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4749ED3C1CAB470800F12506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4749ED401CAB470900F12506 /* RyujinDataCompiler_d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47A80CA11E2C660000101850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47A80CA61E2C660200101850 /* RyujinUnitTesting_d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D2029F1C85503F00F253EF = {
+			isa = PBXGroup;
+			children = (
+				47D202B91C8550FC00F253EF /* RyujinCooker.xcodeproj */,
+				4749ED3B1CAB470800F12506 /* RyujinDataCompiler.xcodeproj */,
+				471A41751F5CD1AB0032F747 /* RyujinShaderCompiler.xcodeproj */,
+				47A80CA01E2C660000101850 /* RyujinUnitTesting.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		47D202BA1C8550FC00F253EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D202BE1C8550FD00F253EF /* RyujinCooker_d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		47D202A01C85503F00F253EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					47D202D01C8611CE00F253EF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 47D202A31C85503F00F253EF /* Build configuration list for PBXProject "RyujinTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47D2029F1C85503F00F253EF;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 47D202BA1C8550FC00F253EF /* Products */;
+					ProjectRef = 47D202B91C8550FC00F253EF /* RyujinCooker.xcodeproj */;
+				},
+				{
+					ProductGroup = 4749ED3C1CAB470800F12506 /* Products */;
+					ProjectRef = 4749ED3B1CAB470800F12506 /* RyujinDataCompiler.xcodeproj */;
+				},
+				{
+					ProductGroup = 471A41761F5CD1AB0032F747 /* Products */;
+					ProjectRef = 471A41751F5CD1AB0032F747 /* RyujinShaderCompiler.xcodeproj */;
+				},
+				{
+					ProductGroup = 47A80CA11E2C660000101850 /* Products */;
+					ProjectRef = 47A80CA01E2C660000101850 /* RyujinUnitTesting.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				47D202D01C8611CE00F253EF /* Ryujin Tools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		47414BAC1F64715C001C04B2 /* RyujinShaderCompiler */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = RyujinShaderCompiler;
+			remoteRef = 47414BAB1F64715C001C04B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4749ED401CAB470900F12506 /* RyujinDataCompiler_d */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = RyujinDataCompiler_d;
+			remoteRef = 4749ED3F1CAB470900F12506 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		47A80CA61E2C660200101850 /* RyujinUnitTesting_d */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = RyujinUnitTesting_d;
+			remoteRef = 47A80CA51E2C660200101850 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		47D202BE1C8550FD00F253EF /* RyujinCooker_d */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = RyujinCooker_d;
+			remoteRef = 47D202BD1C8550FD00F253EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		47D202D51C86126000F253EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RyujinCooker;
+			targetProxy = 47D202D41C86126000F253EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47D202A41C85503F00F253EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Debug;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		47D202A51C85503F00F253EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Release;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		47D202D21C8611CE00F253EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47D202D31C8611CE00F253EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D202A31C85503F00F253EF /* Build configuration list for PBXProject "RyujinTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D202A41C85503F00F253EF /* Debug */,
+				47D202A51C85503F00F253EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D202D11C8611CE00F253EF /* Build configuration list for PBXAggregateTarget "Ryujin Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D202D21C8611CE00F253EF /* Debug */,
+				47D202D31C8611CE00F253EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D202A01C85503F00F253EF /* Project object */;
+}

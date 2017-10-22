@@ -1,0 +1,37 @@
+{
+    "outputLocation": "../../Ryujin/Ryujin/",
+    
+    "structs":
+    [
+        {
+            "structName": "TestMaterial",
+            "shaderFile": "SimpleShader.rsf",
+            "vertexFunction": "",
+            "fragmentFunction": "",
+            "var0":
+            {
+                "varName": "name",
+                "varType": "string",
+                "default": "not set"
+            },
+            "var1":
+            {
+                "varName": "albedo",
+                "varType": "int32",
+                "arrayCount": 3,
+                "default": [ 1.0, 1.0, 1.0 ]
+            }
+        }
+    ],
+    
+    "instances":
+    [
+        {
+            "instance": "red",
+            "basedOn": "TestMaterial",
+            "blendMode": "opaque",
+            "name": "test1",
+            "albedo": [ 1.0, 0.0, 0.0 ]
+        }
+    ]
+}

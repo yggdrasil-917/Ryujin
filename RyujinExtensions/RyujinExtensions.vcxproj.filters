@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AssetManagement">
+      <UniqueIdentifier>{d86a5349-a91f-4b7f-be37-b829c32ebdfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySystem">
+      <UniqueIdentifier>{3dcbc8f9-0ebf-4e25-afcf-2636c3337772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{5e0176e9-70f7-4c66-9cbb-56a0661a0b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{2ef67272-928d-44f4-9f73-80a7facbb1e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetManagement\AssetRegistry.cpp">
+      <Filter>AssetManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManagement\ResourceFactory.cpp">
+      <Filter>AssetManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitySystem\Component.cpp">
+      <Filter>EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitySystem\Entity.cpp">
+      <Filter>EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitySystem\TransformComponent.cpp">
+      <Filter>EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SymbolLocator.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Tickable.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioDevice.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioUtils.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\OpenALDevice.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetManagement\AssetRegistry.hpp">
+      <Filter>AssetManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManagement\Resource.hpp">
+      <Filter>AssetManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManagement\ResourceFactory.hpp">
+      <Filter>AssetManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitySystem\Component.hpp">
+      <Filter>EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitySystem\Entity.hpp">
+      <Filter>EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitySystem\TransformComponent.hpp">
+      <Filter>EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ExtensionsBase.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SymbolLocator.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Tickable.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioDevice.hpp">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioUtils.hpp">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\OpenALDevice.hpp">
+      <Filter>Audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

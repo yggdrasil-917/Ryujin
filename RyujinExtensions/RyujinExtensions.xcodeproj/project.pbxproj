@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470775621F40CD0E00715DF2 /* DOTExporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 470775611F40CD0E00715DF2 /* DOTExporter.cpp */; };
+		4707E32F1EF71743003FB849 /* ContentPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4707E32E1EF71743003FB849 /* ContentPackage.cpp */; };
+		471A41671F5C67E80032F747 /* MeshComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471A41661F5C67E80032F747 /* MeshComponent.cpp */; };
+		473CE7EE1F871CF900AD6D56 /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473CE7ED1F871CF900AD6D56 /* ControllerBase.cpp */; };
+		473CE7F01F87384900AD6D56 /* PlayerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473CE7EF1F87384900AD6D56 /* PlayerController.cpp */; };
+		4784BE111E1A9F92006A5A16 /* SymbolLocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE0D1E1A9F92006A5A16 /* SymbolLocator.cpp */; };
+		4784BE121E1A9F92006A5A16 /* SymbolLocator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE0E1E1A9F92006A5A16 /* SymbolLocator.hpp */; };
+		4784BE131E1A9F92006A5A16 /* Tickable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE0F1E1A9F92006A5A16 /* Tickable.hpp */; };
+		4784BE191E1A9F9B006A5A16 /* AssetRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE141E1A9F9B006A5A16 /* AssetRegistry.cpp */; };
+		4784BE1A1E1A9F9B006A5A16 /* AssetRegistry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE151E1A9F9B006A5A16 /* AssetRegistry.hpp */; };
+		4784BE1B1E1A9F9B006A5A16 /* Resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE161E1A9F9B006A5A16 /* Resource.hpp */; };
+		4784BE1C1E1A9F9B006A5A16 /* ResourceFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE171E1A9F9B006A5A16 /* ResourceFactory.cpp */; };
+		4784BE1D1E1A9F9B006A5A16 /* ResourceFactory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE181E1A9F9B006A5A16 /* ResourceFactory.hpp */; };
+		4784BE211E1AA026006A5A16 /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4784BE1F1E1AA026006A5A16 /* libtbb.dylib */; };
+		4784BE221E1AA026006A5A16 /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4784BE201E1AA026006A5A16 /* libtbbmalloc.dylib */; };
+		4784BE271E1AA19E006A5A16 /* ExtensionsBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE261E1AA19E006A5A16 /* ExtensionsBase.hpp */; };
+		4784BE311E1AC3BE006A5A16 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE2F1E1AC3BE006A5A16 /* Component.cpp */; };
+		4784BE321E1AC3BE006A5A16 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE301E1AC3BE006A5A16 /* Component.hpp */; };
+		4784BE351E1ACA61006A5A16 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE341E1ACA61006A5A16 /* Entity.cpp */; };
+		4784BE381E1AEF77006A5A16 /* TransformComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4784BE361E1AEF77006A5A16 /* TransformComponent.cpp */; };
+		4784BE391E1AEF77006A5A16 /* TransformComponent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4784BE371E1AEF77006A5A16 /* TransformComponent.hpp */; };
+		47AF65841EF50A72003D7205 /* AudioResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47AF65831EF50A71003D7205 /* AudioResource.cpp */; };
+		47C4209B1E2184850034C6B2 /* Tickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47C4209A1E2184850034C6B2 /* Tickable.cpp */; };
+		47D5BB5A1E6651AF0056A81D /* AudioUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D5BB591E6651AF0056A81D /* AudioUtils.cpp */; };
+		47D5BB5C1E6C59120056A81D /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D5BB5B1E6C59120056A81D /* AudioDevice.cpp */; };
+		47D6BDC71E633D0A00BA9A92 /* OpenALDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D6BDC61E633D0A00BA9A92 /* OpenALDevice.cpp */; };
+		47D6BDCA1E633EB800BA9A92 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D6BDC91E633EB800BA9A92 /* OpenAL.framework */; };
+		47F5A0DA1F646849000B9183 /* IModule.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 47F5A0D51F646849000B9183 /* IModule.hpp */; };
+		47F5A0DB1F646849000B9183 /* ModuleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47F5A0D61F646849000B9183 /* ModuleManager.cpp */; };
+		47F5A0DC1F646849000B9183 /* ModuleManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 47F5A0D71F646849000B9183 /* ModuleManager.hpp */; };
+		47F5A0DD1F646849000B9183 /* ModuleManagerMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47F5A0D81F646849000B9183 /* ModuleManagerMac.cpp */; };
+		47F5A0DE1F646849000B9183 /* ModuleManagerMac.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 47F5A0D91F646849000B9183 /* ModuleManagerMac.hpp */; };
+		47F5A0E11F646ADC000B9183 /* ModuleMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47F5A0E01F646ADC000B9183 /* ModuleMac.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		470775601F40BFF000715DF2 /* DOTExporter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DOTExporter.hpp; path = Utils/DOTExporter.hpp; sourceTree = "<group>"; };
+		470775611F40CD0E00715DF2 /* DOTExporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DOTExporter.cpp; path = Utils/DOTExporter.cpp; sourceTree = "<group>"; };
+		4707E32D1EF71528003FB849 /* ContentPackage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ContentPackage.hpp; path = AssetManagement/ContentPackage.hpp; sourceTree = "<group>"; };
+		4707E32E1EF71743003FB849 /* ContentPackage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContentPackage.cpp; path = AssetManagement/ContentPackage.cpp; sourceTree = "<group>"; };
+		471A41651F5C653A0032F747 /* MeshComponent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MeshComponent.hpp; path = EntitySystem/MeshComponent.hpp; sourceTree = "<group>"; };
+		471A41661F5C67E80032F747 /* MeshComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshComponent.cpp; path = EntitySystem/MeshComponent.cpp; sourceTree = "<group>"; };
+		473CE7EB1F85BBA400AD6D56 /* PlayerController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PlayerController.hpp; path = Controller/PlayerController.hpp; sourceTree = SOURCE_ROOT; };
+		473CE7EC1F85BF8F00AD6D56 /* ControllerBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ControllerBase.hpp; path = Controller/ControllerBase.hpp; sourceTree = SOURCE_ROOT; };
+		473CE7ED1F871CF900AD6D56 /* ControllerBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ControllerBase.cpp; path = Controller/ControllerBase.cpp; sourceTree = SOURCE_ROOT; };
+		473CE7EF1F87384900AD6D56 /* PlayerController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerController.cpp; path = Controller/PlayerController.cpp; sourceTree = SOURCE_ROOT; };
+		4784BDFA1E1A99F8006A5A16 /* libRyujinExtensions_d.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libRyujinExtensions_d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4784BE0D1E1A9F92006A5A16 /* SymbolLocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SymbolLocator.cpp; path = Utils/SymbolLocator.cpp; sourceTree = "<group>"; };
+		4784BE0E1E1A9F92006A5A16 /* SymbolLocator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SymbolLocator.hpp; path = Utils/SymbolLocator.hpp; sourceTree = "<group>"; };
+		4784BE0F1E1A9F92006A5A16 /* Tickable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Tickable.hpp; path = Utils/Tickable.hpp; sourceTree = "<group>"; };
+		4784BE141E1A9F9B006A5A16 /* AssetRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AssetRegistry.cpp; path = AssetManagement/AssetRegistry.cpp; sourceTree = "<group>"; };
+		4784BE151E1A9F9B006A5A16 /* AssetRegistry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AssetRegistry.hpp; path = AssetManagement/AssetRegistry.hpp; sourceTree = "<group>"; };
+		4784BE161E1A9F9B006A5A16 /* Resource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Resource.hpp; path = AssetManagement/Resource.hpp; sourceTree = "<group>"; };
+		4784BE171E1A9F9B006A5A16 /* ResourceFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceFactory.cpp; path = AssetManagement/ResourceFactory.cpp; sourceTree = "<group>"; };
+		4784BE181E1A9F9B006A5A16 /* ResourceFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ResourceFactory.hpp; path = AssetManagement/ResourceFactory.hpp; sourceTree = "<group>"; };
+		4784BE1F1E1AA026006A5A16 /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = ../ThirdParty/tbb/lib/mac/libtbb.dylib; sourceTree = "<group>"; };
+		4784BE201E1AA026006A5A16 /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = ../ThirdParty/tbb/lib/mac/libtbbmalloc.dylib; sourceTree = "<group>"; };
+		4784BE261E1AA19E006A5A16 /* ExtensionsBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ExtensionsBase.hpp; path = Utils/ExtensionsBase.hpp; sourceTree = "<group>"; };
+		4784BE2F1E1AC3BE006A5A16 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Component.cpp; path = EntitySystem/Component.cpp; sourceTree = "<group>"; };
+		4784BE301E1AC3BE006A5A16 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Component.hpp; path = EntitySystem/Component.hpp; sourceTree = "<group>"; };
+		4784BE331E1AC4F9006A5A16 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Entity.hpp; path = EntitySystem/Entity.hpp; sourceTree = "<group>"; };
+		4784BE341E1ACA61006A5A16 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = EntitySystem/Entity.cpp; sourceTree = "<group>"; };
+		4784BE361E1AEF77006A5A16 /* TransformComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TransformComponent.cpp; path = EntitySystem/TransformComponent.cpp; sourceTree = "<group>"; };
+		4784BE371E1AEF77006A5A16 /* TransformComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TransformComponent.hpp; path = EntitySystem/TransformComponent.hpp; sourceTree = "<group>"; };
+		47AF65821EF5095A003D7205 /* AudioResource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AudioResource.hpp; path = AssetManagement/AudioResource.hpp; sourceTree = "<group>"; };
+		47AF65831EF50A71003D7205 /* AudioResource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioResource.cpp; path = AssetManagement/AudioResource.cpp; sourceTree = "<group>"; };
+		47C4209A1E2184850034C6B2 /* Tickable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tickable.cpp; path = Utils/Tickable.cpp; sourceTree = "<group>"; };
+		47D5BB581E66501E0056A81D /* AudioUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AudioUtils.hpp; path = Audio/AudioUtils.hpp; sourceTree = "<group>"; };
+		47D5BB591E6651AF0056A81D /* AudioUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioUtils.cpp; path = Audio/AudioUtils.cpp; sourceTree = "<group>"; };
+		47D5BB5B1E6C59120056A81D /* AudioDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioDevice.cpp; path = Audio/AudioDevice.cpp; sourceTree = "<group>"; };
+		47D6BDC41E63396A00BA9A92 /* OpenALDevice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = OpenALDevice.hpp; path = Audio/OpenALDevice.hpp; sourceTree = "<group>"; };
+		47D6BDC51E633AEA00BA9A92 /* AudioDevice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AudioDevice.hpp; path = Audio/AudioDevice.hpp; sourceTree = "<group>"; };
+		47D6BDC61E633D0A00BA9A92 /* OpenALDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenALDevice.cpp; path = Audio/OpenALDevice.cpp; sourceTree = "<group>"; };
+		47D6BDC91E633EB800BA9A92 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		47F5A0D51F646849000B9183 /* IModule.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IModule.hpp; path = ModuleManager/IModule.hpp; sourceTree = "<group>"; };
+		47F5A0D61F646849000B9183 /* ModuleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModuleManager.cpp; path = ModuleManager/ModuleManager.cpp; sourceTree = "<group>"; };
+		47F5A0D71F646849000B9183 /* ModuleManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModuleManager.hpp; path = ModuleManager/ModuleManager.hpp; sourceTree = "<group>"; };
+		47F5A0D81F646849000B9183 /* ModuleManagerMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModuleManagerMac.cpp; path = ModuleManager/ModuleManagerMac.cpp; sourceTree = "<group>"; };
+		47F5A0D91F646849000B9183 /* ModuleManagerMac.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModuleManagerMac.hpp; path = ModuleManager/ModuleManagerMac.hpp; sourceTree = "<group>"; };
+		47F5A0DF1F646A85000B9183 /* ModuleMac.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ModuleMac.hpp; path = ModuleManager/ModuleMac.hpp; sourceTree = "<group>"; };
+		47F5A0E01F646ADC000B9183 /* ModuleMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModuleMac.cpp; path = ModuleManager/ModuleMac.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4784BDF71E1A99F8006A5A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6BDCA1E633EB800BA9A92 /* OpenAL.framework in Frameworks */,
+				4784BE211E1AA026006A5A16 /* libtbb.dylib in Frameworks */,
+				4784BE221E1AA026006A5A16 /* libtbbmalloc.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473CE7EA1F85BB7F00AD6D56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				473CE7ED1F871CF900AD6D56 /* ControllerBase.cpp */,
+				473CE7EC1F85BF8F00AD6D56 /* ControllerBase.hpp */,
+				473CE7EB1F85BBA400AD6D56 /* PlayerController.hpp */,
+				473CE7EF1F87384900AD6D56 /* PlayerController.cpp */,
+			);
+			name = Controller;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4784BDF11E1A99F8006A5A16 = {
+			isa = PBXGroup;
+			children = (
+				4784BE1E1E1AA025006A5A16 /* _Frameworks */,
+				4784BDFB1E1A99F8006A5A16 /* _Products */,
+				4784BE0A1E1A9F7C006A5A16 /* AssetManagement */,
+				47D6BDC31E6338C300BA9A92 /* Audio */,
+				473CE7EA1F85BB7F00AD6D56 /* Controller */,
+				4784BE2E1E1AC3A4006A5A16 /* EntitySystem */,
+				47F5A0D41F64683A000B9183 /* ModuleManager */,
+				4784BE0B1E1A9F83006A5A16 /* Utils */,
+			);
+			sourceTree = "<group>";
+		};
+		4784BDFB1E1A99F8006A5A16 /* _Products */ = {
+			isa = PBXGroup;
+			children = (
+				4784BDFA1E1A99F8006A5A16 /* libRyujinExtensions_d.dylib */,
+			);
+			name = _Products;
+			sourceTree = "<group>";
+		};
+		4784BE0A1E1A9F7C006A5A16 /* AssetManagement */ = {
+			isa = PBXGroup;
+			children = (
+				4784BE141E1A9F9B006A5A16 /* AssetRegistry.cpp */,
+				4784BE151E1A9F9B006A5A16 /* AssetRegistry.hpp */,
+				47AF65831EF50A71003D7205 /* AudioResource.cpp */,
+				47AF65821EF5095A003D7205 /* AudioResource.hpp */,
+				4707E32E1EF71743003FB849 /* ContentPackage.cpp */,
+				4707E32D1EF71528003FB849 /* ContentPackage.hpp */,
+				4784BE161E1A9F9B006A5A16 /* Resource.hpp */,
+				4784BE171E1A9F9B006A5A16 /* ResourceFactory.cpp */,
+				4784BE181E1A9F9B006A5A16 /* ResourceFactory.hpp */,
+			);
+			name = AssetManagement;
+			sourceTree = "<group>";
+		};
+		4784BE0B1E1A9F83006A5A16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				470775611F40CD0E00715DF2 /* DOTExporter.cpp */,
+				470775601F40BFF000715DF2 /* DOTExporter.hpp */,
+				4784BE261E1AA19E006A5A16 /* ExtensionsBase.hpp */,
+				4784BE0D1E1A9F92006A5A16 /* SymbolLocator.cpp */,
+				4784BE0E1E1A9F92006A5A16 /* SymbolLocator.hpp */,
+				47C4209A1E2184850034C6B2 /* Tickable.cpp */,
+				4784BE0F1E1A9F92006A5A16 /* Tickable.hpp */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4784BE1E1E1AA025006A5A16 /* _Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D6BDC91E633EB800BA9A92 /* OpenAL.framework */,
+				4784BE1F1E1AA026006A5A16 /* libtbb.dylib */,
+				4784BE201E1AA026006A5A16 /* libtbbmalloc.dylib */,
+			);
+			name = _Frameworks;
+			sourceTree = "<group>";
+		};
+		4784BE2E1E1AC3A4006A5A16 /* EntitySystem */ = {
+			isa = PBXGroup;
+			children = (
+				4784BE2F1E1AC3BE006A5A16 /* Component.cpp */,
+				4784BE301E1AC3BE006A5A16 /* Component.hpp */,
+				4784BE341E1ACA61006A5A16 /* Entity.cpp */,
+				4784BE331E1AC4F9006A5A16 /* Entity.hpp */,
+				471A41661F5C67E80032F747 /* MeshComponent.cpp */,
+				471A41651F5C653A0032F747 /* MeshComponent.hpp */,
+				4784BE361E1AEF77006A5A16 /* TransformComponent.cpp */,
+				4784BE371E1AEF77006A5A16 /* TransformComponent.hpp */,
+			);
+			name = EntitySystem;
+			sourceTree = "<group>";
+		};
+		47D6BDC31E6338C300BA9A92 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				47D5BB5B1E6C59120056A81D /* AudioDevice.cpp */,
+				47D6BDC51E633AEA00BA9A92 /* AudioDevice.hpp */,
+				47D5BB591E6651AF0056A81D /* AudioUtils.cpp */,
+				47D5BB581E66501E0056A81D /* AudioUtils.hpp */,
+				47D6BDC61E633D0A00BA9A92 /* OpenALDevice.cpp */,
+				47D6BDC41E63396A00BA9A92 /* OpenALDevice.hpp */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		47F5A0D41F64683A000B9183 /* ModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				47F5A0D51F646849000B9183 /* IModule.hpp */,
+				47F5A0E01F646ADC000B9183 /* ModuleMac.cpp */,
+				47F5A0DF1F646A85000B9183 /* ModuleMac.hpp */,
+				47F5A0D61F646849000B9183 /* ModuleManager.cpp */,
+				47F5A0D71F646849000B9183 /* ModuleManager.hpp */,
+				47F5A0D81F646849000B9183 /* ModuleManagerMac.cpp */,
+				47F5A0D91F646849000B9183 /* ModuleManagerMac.hpp */,
+			);
+			name = ModuleManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4784BDF81E1A99F8006A5A16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4784BE1A1E1A9F9B006A5A16 /* AssetRegistry.hpp in Headers */,
+				4784BE271E1AA19E006A5A16 /* ExtensionsBase.hpp in Headers */,
+				47F5A0DC1F646849000B9183 /* ModuleManager.hpp in Headers */,
+				4784BE1B1E1A9F9B006A5A16 /* Resource.hpp in Headers */,
+				4784BE391E1AEF77006A5A16 /* TransformComponent.hpp in Headers */,
+				47F5A0DA1F646849000B9183 /* IModule.hpp in Headers */,
+				4784BE131E1A9F92006A5A16 /* Tickable.hpp in Headers */,
+				4784BE121E1A9F92006A5A16 /* SymbolLocator.hpp in Headers */,
+				4784BE1D1E1A9F9B006A5A16 /* ResourceFactory.hpp in Headers */,
+				4784BE321E1AC3BE006A5A16 /* Component.hpp in Headers */,
+				47F5A0DE1F646849000B9183 /* ModuleManagerMac.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4784BDF91E1A99F8006A5A16 /* RyujinExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4784BDFE1E1A99F8006A5A16 /* Build configuration list for PBXNativeTarget "RyujinExtensions" */;
+			buildPhases = (
+				4784BDF61E1A99F8006A5A16 /* Sources */,
+				4784BDF71E1A99F8006A5A16 /* Frameworks */,
+				4784BDF81E1A99F8006A5A16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyujinExtensions;
+			productName = RyujinExtensions;
+			productReference = 4784BDFA1E1A99F8006A5A16 /* libRyujinExtensions_d.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4784BDF21E1A99F8006A5A16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Xavi;
+				TargetAttributes = {
+					4784BDF91E1A99F8006A5A16 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4784BDF51E1A99F8006A5A16 /* Build configuration list for PBXProject "RyujinExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4784BDF11E1A99F8006A5A16;
+			productRefGroup = 4784BDFB1E1A99F8006A5A16 /* _Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4784BDF91E1A99F8006A5A16 /* RyujinExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4784BDF61E1A99F8006A5A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6BDC71E633D0A00BA9A92 /* OpenALDevice.cpp in Sources */,
+				47AF65841EF50A72003D7205 /* AudioResource.cpp in Sources */,
+				470775621F40CD0E00715DF2 /* DOTExporter.cpp in Sources */,
+				4784BE111E1A9F92006A5A16 /* SymbolLocator.cpp in Sources */,
+				473CE7F01F87384900AD6D56 /* PlayerController.cpp in Sources */,
+				47D5BB5A1E6651AF0056A81D /* AudioUtils.cpp in Sources */,
+				47F5A0E11F646ADC000B9183 /* ModuleMac.cpp in Sources */,
+				473CE7EE1F871CF900AD6D56 /* ControllerBase.cpp in Sources */,
+				4784BE311E1AC3BE006A5A16 /* Component.cpp in Sources */,
+				4784BE191E1A9F9B006A5A16 /* AssetRegistry.cpp in Sources */,
+				47F5A0DD1F646849000B9183 /* ModuleManagerMac.cpp in Sources */,
+				4784BE351E1ACA61006A5A16 /* Entity.cpp in Sources */,
+				471A41671F5C67E80032F747 /* MeshComponent.cpp in Sources */,
+				47D5BB5C1E6C59120056A81D /* AudioDevice.cpp in Sources */,
+				4784BE381E1AEF77006A5A16 /* TransformComponent.cpp in Sources */,
+				4784BE1C1E1A9F9B006A5A16 /* ResourceFactory.cpp in Sources */,
+				47F5A0DB1F646849000B9183 /* ModuleManager.cpp in Sources */,
+				4707E32F1EF71743003FB849 /* ContentPackage.cpp in Sources */,
+				47C4209B1E2184850034C6B2 /* Tickable.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4784BDFC1E1A99F8006A5A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"USE_TBB=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4784BDFD1E1A99F8006A5A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_TBB=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4784BDFF1E1A99F8006A5A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/tbb/include,
+					../,
+					../ThirdParty/stb,
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					../_Build/Mac/Debug,
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+				);
+				OTHER_LDFLAGS = (
+					"-lRyujinCore_d",
+					"-lRyujinRendererMetal_d",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)_d";
+			};
+			name = Debug;
+		};
+		4784BE001E1A99F8006A5A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Release;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/tbb/include,
+					../,
+					../ThirdParty/stb,
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					../_Build/Mac/Release,
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+				);
+				OTHER_LDFLAGS = (
+					"-lRyujinCore",
+					"-lRyujinRendererMetal",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4784BDF51E1A99F8006A5A16 /* Build configuration list for PBXProject "RyujinExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4784BDFC1E1A99F8006A5A16 /* Debug */,
+				4784BDFD1E1A99F8006A5A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4784BDFE1E1A99F8006A5A16 /* Build configuration list for PBXNativeTarget "RyujinExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4784BDFF1E1A99F8006A5A16 /* Debug */,
+				4784BE001E1A99F8006A5A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4784BDF21E1A99F8006A5A16 /* Project object */;
+}

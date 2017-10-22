@@ -1,0 +1,19 @@
+
+
+#include "../Renderer/ShaderCommon.hpp"
+
+
+float4 GetBaseColor()
+{
+    %s
+}
+
+float GetRoughness()
+{
+    %s
+}
+
+float GetMetallic()
+{
+    %s
+}

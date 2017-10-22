@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ryujin">
+      <UniqueIdentifier>{f23ccf46-ff8b-48bc-9bb2-72dbc59fc63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{fa831122-55ba-4ede-ac52-b61b7565ff63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{2b4701e8-602a-4368-a5e8-d611b857beab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneManagement">
+      <UniqueIdentifier>{29e25076-b997-4a61-bcfa-e681f042dc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{51cdf0b4-6d5a-4abf-9a7a-ae0d2d62ecbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagers">
+      <UniqueIdentifier>{089bbb79-f109-466d-b71f-52906e291262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineResources">
+      <UniqueIdentifier>{846be208-72f1-4d7d-9657-e9ede62688d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{1ea5feb8-e22d-470e-9b75-2d42231c0b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\imgui">
+      <UniqueIdentifier>{96d168d4-e6d6-4117-91a7-4995f6aa91a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ryujin\Main.cpp">
+      <Filter>Ryujin</Filter>
+    </ClCompile>
+    <ClCompile Include="Ryujin\Engine.cpp">
+      <Filter>Ryujin</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\IO.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\IOBase.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\EntityManager.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\MeshComponentManager.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\TagManager.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\TransformComponentManager.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManagement\Scene.cpp">
+      <Filter>SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManagement\World.cpp">
+      <Filter>SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\LuaVM.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManagers\ResourceTypes.cpp">
+      <Filter>ResourceManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ImGuiManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\imgui\imgui.cpp">
+      <Filter>UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\imgui\imgui_demo.cpp">
+      <Filter>UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\imgui\imgui_draw.cpp">
+      <Filter>UI\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ryujin\Versions.hpp">
+      <Filter>Ryujin</Filter>
+    </ClInclude>
+    <ClInclude Include="Ryujin\Engine.hpp">
+      <Filter>Ryujin</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\IO.hpp">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\IOBase.hpp">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\ComponentManagerCommon.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\ECS.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\EntityManager.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\MeshComponentManager.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\TagManager.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\TransformComponentManager.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManagement\Scene.hpp">
+      <Filter>SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManagement\World.hpp">
+      <Filter>SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\LuaVM.hpp">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagers\ModelResourceManager.hpp">
+      <Filter>ResourceManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagers\ResourceManager.hpp">
+      <Filter>ResourceManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagers\ResourceTypes.hpp">
+      <Filter>ResourceManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagers\TextureResourceManager.hpp">
+      <Filter>ResourceManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>EngineResources</Filter>
+    </ClInclude>
+    <ClInclude Include="Ryujin\RyujinApp.hpp">
+      <Filter>Ryujin</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ImGuiManager.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\imconfig.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\imgui.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\imgui_internal.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\stb_rect_pack.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\stb_textedit.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\imgui\stb_truetype.h">
+      <Filter>UI\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="EngineResources\RyujinIcon\RyujinIcon.ico">
+      <Filter>EngineResources</Filter>
+    </Image>
+    <Image Include="EngineResources\Splash\RyujinBmp.bmp">
+      <Filter>EngineResources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ryujin.rc">
+      <Filter>EngineResources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

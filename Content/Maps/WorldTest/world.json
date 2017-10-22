@@ -1,0 +1,19 @@
+{
+    "camera": {
+        "lookat": [ 0.0, 0.0, 0.0 ],
+        "eye": [ 0.0, 0.0, 5.0 ],
+        "up": [ 0.0, 1.0, 0.0 ],
+        "nearZ": 10.0,
+        "farZ": 10000.0,
+        "fov": 80,
+        "UsePerspectiveProjection": "true"
+    },
+
+    "skybox": { 
+        "textureDir":  "Lancellotti"
+    },
+
+    "scenes": [
+        "persistent.json"
+    ]
+}

@@ -1,0 +1,26 @@
+{  
+    "actors": [
+        {
+            "name": "actor 1",
+            "transformComponent": 
+            {
+                "position": [ 0.0, 0.0, 0.0 ],
+                "orientation": [ 0.0, 0.0, 0.0 ],
+                "scale": [ 1.0, 1.0, 1.0 ]
+            },
+            "meshComponent":
+            {
+                "mesh": "alduin.obj",
+                "material": "alduin.mtl"
+            }
+        },
+        {
+            "name": "actor 2",
+            "meshComponent":
+            {
+                "mesh": "tessQuad.obj",
+                "material": "tessQuad.mtl"
+            }
+        }
+    ]
+}

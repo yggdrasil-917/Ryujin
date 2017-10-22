@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4749ED351CAB470800F12506 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED341CAB470800F12506 /* main.cpp */; };
+		4749ED431CAB49E200F12506 /* RyujinDataCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED411CAB49E200F12506 /* RyujinDataCompiler.cpp */; };
+		47EDCD281CC5391C00755297 /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EDCD261CC5391C00755297 /* libtbb.dylib */; };
+		47EDCD291CC5391C00755297 /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EDCD271CC5391C00755297 /* libtbbmalloc.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4749ED2F1CAB470800F12506 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4749ED311CAB470800F12506 /* RyujinDataCompiler_d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RyujinDataCompiler_d; sourceTree = BUILT_PRODUCTS_DIR; };
+		4749ED341CAB470800F12506 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4749ED411CAB49E200F12506 /* RyujinDataCompiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RyujinDataCompiler.cpp; sourceTree = "<group>"; };
+		4749ED421CAB49E200F12506 /* RyujinDataCompiler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RyujinDataCompiler.hpp; sourceTree = "<group>"; };
+		47EDCD261CC5391C00755297 /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = ../../ThirdParty/tbb/lib/mac/libtbb.dylib; sourceTree = "<group>"; };
+		47EDCD271CC5391C00755297 /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = ../../ThirdParty/tbb/lib/mac/libtbbmalloc.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4749ED2E1CAB470800F12506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EDCD281CC5391C00755297 /* libtbb.dylib in Frameworks */,
+				47EDCD291CC5391C00755297 /* libtbbmalloc.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4749ED281CAB470800F12506 = {
+			isa = PBXGroup;
+			children = (
+				47EDCD2A1CC54C1900755297 /* _Framework */,
+				4749ED321CAB470800F12506 /* _Products */,
+				4749ED331CAB470800F12506 /* RyujinDataCompiler */,
+			);
+			sourceTree = "<group>";
+		};
+		4749ED321CAB470800F12506 /* _Products */ = {
+			isa = PBXGroup;
+			children = (
+				4749ED311CAB470800F12506 /* RyujinDataCompiler_d */,
+			);
+			name = _Products;
+			sourceTree = "<group>";
+		};
+		4749ED331CAB470800F12506 /* RyujinDataCompiler */ = {
+			isa = PBXGroup;
+			children = (
+				4749ED341CAB470800F12506 /* main.cpp */,
+				4749ED411CAB49E200F12506 /* RyujinDataCompiler.cpp */,
+				4749ED421CAB49E200F12506 /* RyujinDataCompiler.hpp */,
+			);
+			path = RyujinDataCompiler;
+			sourceTree = "<group>";
+		};
+		47EDCD2A1CC54C1900755297 /* _Framework */ = {
+			isa = PBXGroup;
+			children = (
+				47EDCD271CC5391C00755297 /* libtbbmalloc.dylib */,
+				47EDCD261CC5391C00755297 /* libtbb.dylib */,
+			);
+			name = _Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4749ED301CAB470800F12506 /* RyujinDataCompiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4749ED381CAB470800F12506 /* Build configuration list for PBXNativeTarget "RyujinDataCompiler" */;
+			buildPhases = (
+				4749ED2D1CAB470800F12506 /* Sources */,
+				4749ED2E1CAB470800F12506 /* Frameworks */,
+				4749ED2F1CAB470800F12506 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyujinDataCompiler;
+			productName = RyujinDataCompiler;
+			productReference = 4749ED311CAB470800F12506 /* RyujinDataCompiler_d */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4749ED291CAB470800F12506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Xavi;
+				TargetAttributes = {
+					4749ED301CAB470800F12506 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 4749ED2C1CAB470800F12506 /* Build configuration list for PBXProject "RyujinDataCompiler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4749ED281CAB470800F12506;
+			productRefGroup = 4749ED321CAB470800F12506 /* _Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4749ED301CAB470800F12506 /* RyujinDataCompiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4749ED2D1CAB470800F12506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4749ED351CAB470800F12506 /* main.cpp in Sources */,
+				4749ED431CAB49E200F12506 /* RyujinDataCompiler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4749ED361CAB470800F12506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../_Build/Mac/Debug;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../..,
+					../../ThirdParty/tbb/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../ThirdParty/tbb/lib/mac @loader_path";
+				LIBRARY_SEARCH_PATHS = ../../ThirdParty/tbb/lib/mac;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				OTHER_LDFLAGS = (
+					"-lRyujinRendererMetal_d",
+					"-lRyujinCore_d",
+					"-lRyujinExtensions_d",
+				);
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		4749ED371CAB470800F12506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../_Build/Mac/Release;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../..,
+					../../ThirdParty/tbb/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../ThirdParty/tbb/lib/mac @loader_path";
+				LIBRARY_SEARCH_PATHS = ../../ThirdParty/tbb/lib/mac;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				OTHER_LDFLAGS = (
+					"-lRyujinRendererMetal",
+					"-lRyujinCore",
+					"-lRyujinExtensions",
+				);
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		4749ED391CAB470800F12506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)_d";
+			};
+			name = Debug;
+		};
+		4749ED3A1CAB470800F12506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4749ED2C1CAB470800F12506 /* Build configuration list for PBXProject "RyujinDataCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4749ED361CAB470800F12506 /* Debug */,
+				4749ED371CAB470800F12506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4749ED381CAB470800F12506 /* Build configuration list for PBXNativeTarget "RyujinDataCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4749ED391CAB470800F12506 /* Debug */,
+				4749ED3A1CAB470800F12506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4749ED291CAB470800F12506 /* Project object */;
+}

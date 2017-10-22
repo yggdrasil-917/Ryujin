@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="RyujinCooker\CookerCommon.hpp" />
+    <ClInclude Include="RyujinCooker\MeshCooker.hpp" />
+    <ClInclude Include="RyujinCooker\RyujinCooker.hpp" />
+    <ClInclude Include="RyujinCooker\TextureCooker.hpp" />
+    <ClInclude Include="RyujinCooker\WorldCooker.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RyujinCooker\main.cpp" />
+    <ClCompile Include="RyujinCooker\MeshCooker.cpp" />
+    <ClCompile Include="RyujinCooker\RyujinCooker.cpp" />
+    <ClCompile Include="RyujinCooker\TextureCooker.cpp" />
+    <ClCompile Include="RyujinCooker\WorldCooker.cpp" />
+  </ItemGroup>
+</Project>

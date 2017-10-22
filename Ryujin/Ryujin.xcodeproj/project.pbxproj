@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471849891E514D940029BF33 /* ImGuiManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473AE6B21E3E2794000AA375 /* ImGuiManager.cpp */; };
+		471849951E514FA80029BF33 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718498B1E514FA80029BF33 /* imgui_demo.cpp */; };
+		471849961E514FA80029BF33 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718498C1E514FA80029BF33 /* imgui_draw.cpp */; };
+		471849971E514FA80029BF33 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718498E1E514FA80029BF33 /* imgui.cpp */; };
+		4718499B1E514FDD0029BF33 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718498E1E514FA80029BF33 /* imgui.cpp */; };
+		4718499C1E514FEB0029BF33 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718498C1E514FA80029BF33 /* imgui_draw.cpp */; };
+		47212CFB1CD4D8F60039B7D7 /* LuaVM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47212CF91CD4D8F60039B7D7 /* LuaVM.cpp */; };
+		47212CFC1CD4FF490039B7D7 /* LuaVM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47212CF91CD4D8F60039B7D7 /* LuaVM.cpp */; };
+		473AE6B31E3E2794000AA375 /* ImGuiManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473AE6B21E3E2794000AA375 /* ImGuiManager.cpp */; };
+		473CE7F51F887C7E00AD6D56 /* PlayerCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473CE7F41F887C7E00AD6D56 /* PlayerCamera.cpp */; };
+		473CE7F61F888E6100AD6D56 /* PlayerCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473CE7F41F887C7E00AD6D56 /* PlayerCamera.cpp */; };
+		473F9CF81C90DF0300A8ED8E /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202CA1C85518C00F253EF /* World.cpp */; };
+		473F9CF91C90DF0300A8ED8E /* RyujinApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D2026B1C851AF200F253EF /* RyujinApp.mm */; };
+		473F9CFA1C90DF0300A8ED8E /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202C71C85518C00F253EF /* Scene.cpp */; };
+		473F9CFB1C90DF0300A8ED8E /* ResourceTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202C51C85518C00F253EF /* ResourceTypes.cpp */; };
+		473F9CFE1C90DF0300A8ED8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D202701C851AF200F253EF /* Assets.xcassets */; };
+		473F9CFF1C90DF0300A8ED8E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D202721C851AF200F253EF /* MainMenu.xib */; };
+		473F9D191C90E22C00A8ED8E /* libtbb.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D161C90E22C00A8ED8E /* libtbb.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9D1A1C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D171C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9D1B1C90E22C00A8ED8E /* libtbbmalloc.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9D211C90E2F100A8ED8E /* Splash in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D201C90E2F100A8ED8E /* Splash */; };
+		473F9D2E1C90FE3000A8ED8E /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473F9D2D1C90FE3000A8ED8E /* Main.cpp */; };
+		473F9D311C90FE8F00A8ED8E /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473F9D2F1C90FE8F00A8ED8E /* Engine.cpp */; };
+		473F9D331C9104CA00A8ED8E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D321C9104CA00A8ED8E /* CoreFoundation.framework */; };
+		473F9D351C9104D400A8ED8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D341C9104D400A8ED8E /* Cocoa.framework */; };
+		473F9D361C9104EB00A8ED8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D341C9104D400A8ED8E /* Cocoa.framework */; };
+		473F9DA01C9118DB00A8ED8E /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473F9D2D1C90FE3000A8ED8E /* Main.cpp */; };
+		473F9DA11C91191B00A8ED8E /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 473F9D2F1C90FE8F00A8ED8E /* Engine.cpp */; };
+		473F9DA51C911D2300A8ED8E /* libtbb.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D161C90E22C00A8ED8E /* libtbb.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9DA61C911D2300A8ED8E /* libtbbmalloc_proxy.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D171C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9DA71C911D2300A8ED8E /* libtbbmalloc.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		473F9DA91C911D3600A8ED8E /* Splash in CopyFiles */ = {isa = PBXBuildFile; fileRef = 473F9D201C90E2F100A8ED8E /* Splash */; };
+		4743D03B1C9132CC0098B41C /* Config in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4743D0391C9132CC0098B41C /* Config */; };
+		4743D03C1C9132CC0098B41C /* CookedMac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4743D03A1C9132CC0098B41C /* CookedMac */; };
+		4743D03D1C9133020098B41C /* Config in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4743D0391C9132CC0098B41C /* Config */; };
+		4743D03E1C9133020098B41C /* CookedMac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4743D03A1C9132CC0098B41C /* CookedMac */; };
+		4749ED131CA8262400F12506 /* TransformComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED111CA8262400F12506 /* TransformComponentManager.cpp */; };
+		4749ED181CA827BC00F12506 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED161CA827BC00F12506 /* EntityManager.cpp */; };
+		4749ED1E1CA828EA00F12506 /* MeshComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED1C1CA828EA00F12506 /* MeshComponentManager.cpp */; };
+		4749ED201CA82C0A00F12506 /* TagManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED191CA8286300F12506 /* TagManager.cpp */; };
+		4749ED211CA82DAA00F12506 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED161CA827BC00F12506 /* EntityManager.cpp */; };
+		4749ED221CA82DBA00F12506 /* MeshComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED1C1CA828EA00F12506 /* MeshComponentManager.cpp */; };
+		4749ED231CA82E0D00F12506 /* TagManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED191CA8286300F12506 /* TagManager.cpp */; };
+		4749ED241CA82E1100F12506 /* TransformComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4749ED111CA8262400F12506 /* TransformComponentManager.cpp */; };
+		4749ED8F1CC27D2900F12506 /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D161C90E22C00A8ED8E /* libtbb.dylib */; };
+		4749ED911CC27D2900F12506 /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */; };
+		4749ED951CC3171500F12506 /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D161C90E22C00A8ED8E /* libtbb.dylib */; };
+		4749ED961CC3171500F12506 /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */; };
+		475114D41D17762B00C77A39 /* libRyujinCore_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 475114D21D17762B00C77A39 /* libRyujinCore_d.dylib */; };
+		475114D51D17762B00C77A39 /* libRyujinRendererMetal_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 475114D31D17762B00C77A39 /* libRyujinRendererMetal_d.dylib */; };
+		475114D61D17765500C77A39 /* libRyujinCore_d.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 475114D21D17762B00C77A39 /* libRyujinCore_d.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		475114D71D17765500C77A39 /* libRyujinRendererMetal_d.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 475114D31D17762B00C77A39 /* libRyujinRendererMetal_d.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		475114DB1D17772200C77A39 /* libRyujinRendererMetal.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 475114D91D17772200C77A39 /* libRyujinRendererMetal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		475114DD1D17776500C77A39 /* libRyujinRendererMetal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 475114D91D17772200C77A39 /* libRyujinRendererMetal.dylib */; };
+		4784BE251E1AA077006A5A16 /* libRyujinExtensions_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4784BE241E1AA077006A5A16 /* libRyujinExtensions_d.dylib */; };
+		4784BE2D1E1AA474006A5A16 /* libRyujinExtensions.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4784BE2C1E1AA474006A5A16 /* libRyujinExtensions.dylib */; };
+		47C4209C1E21860B0034C6B2 /* libRyujinExtensions_d.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4784BE241E1AA077006A5A16 /* libRyujinExtensions_d.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		47C4209D1E2186180034C6B2 /* libRyujinExtensions.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4784BE2C1E1AA474006A5A16 /* libRyujinExtensions.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		47C420A21E2186630034C6B2 /* libRyujinCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C420A11E2186630034C6B2 /* libRyujinCore.dylib */; };
+		47C420A41E21873D0034C6B2 /* libRyujinCore.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47C420A31E21873D0034C6B2 /* libRyujinCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		47D2026C1C851AF200F253EF /* RyujinApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D2026B1C851AF200F253EF /* RyujinApp.mm */; };
+		47D202711C851AF200F253EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D202701C851AF200F253EF /* Assets.xcassets */; };
+		47D202741C851AF200F253EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D202721C851AF200F253EF /* MainMenu.xib */; };
+		47D202CD1C85518C00F253EF /* ResourceTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202C51C85518C00F253EF /* ResourceTypes.cpp */; };
+		47D202CE1C85518C00F253EF /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202C71C85518C00F253EF /* Scene.cpp */; };
+		47D202CF1C85518C00F253EF /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D202CA1C85518C00F253EF /* World.cpp */; };
+		47EAAE301CCBC303007E711D /* IOBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47EAAE2F1CCBC303007E711D /* IOBase.cpp */; };
+		47EAAE331CCBC47E007E711D /* IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47EAAE311CCBC47E007E711D /* IO.cpp */; };
+		47EAAE341CCBCADA007E711D /* IOBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47EAAE2F1CCBC303007E711D /* IOBase.cpp */; };
+		47EAAE351CCC1F15007E711D /* IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47EAAE311CCBC47E007E711D /* IO.cpp */; };
+		47F838BB1F6E3B73005F4464 /* Shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47F838B91F6E3B62005F4464 /* Shaders */; };
+		47F838BC1F6E3D09005F4464 /* Shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47F838B91F6E3B62005F4464 /* Shaders */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		473F9D111C90E1A100A8ED8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				47C4209C1E21860B0034C6B2 /* libRyujinExtensions_d.dylib in CopyFiles */,
+				475114D61D17765500C77A39 /* libRyujinCore_d.dylib in CopyFiles */,
+				475114D71D17765500C77A39 /* libRyujinRendererMetal_d.dylib in CopyFiles */,
+				473F9D191C90E22C00A8ED8E /* libtbb.dylib in CopyFiles */,
+				473F9D1A1C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib in CopyFiles */,
+				473F9D1B1C90E22C00A8ED8E /* libtbbmalloc.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473F9D1F1C90E2DE00A8ED8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4743D03D1C9133020098B41C /* Config in CopyFiles */,
+				4743D03E1C9133020098B41C /* CookedMac in CopyFiles */,
+				473F9D211C90E2F100A8ED8E /* Splash in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473F9DA21C911D0A00A8ED8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				47C420A41E21873D0034C6B2 /* libRyujinCore.dylib in CopyFiles */,
+				47C4209D1E2186180034C6B2 /* libRyujinExtensions.dylib in CopyFiles */,
+				475114DB1D17772200C77A39 /* libRyujinRendererMetal.dylib in CopyFiles */,
+				473F9DA51C911D2300A8ED8E /* libtbb.dylib in CopyFiles */,
+				473F9DA61C911D2300A8ED8E /* libtbbmalloc_proxy.dylib in CopyFiles */,
+				473F9DA71C911D2300A8ED8E /* libtbbmalloc.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473F9DA81C911D2B00A8ED8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				473F9DA91C911D3600A8ED8E /* Splash in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4743D0381C9132BA0098B41C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4743D03B1C9132CC0098B41C /* Config in CopyFiles */,
+				4743D03C1C9132CC0098B41C /* CookedMac in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F5A0C91F5F8588000B9183 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				47F838BC1F6E3D09005F4464 /* Shaders in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F838B51F6E3A53005F4464 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				47F838BB1F6E3B73005F4464 /* Shaders in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		470098C51C95BBDD00656A1E /* Versions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Versions.hpp; sourceTree = "<group>"; };
+		4718498A1E514FA80029BF33 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = ../ThirdParty/imgui/imconfig.h; sourceTree = "<group>"; };
+		4718498B1E514FA80029BF33 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = ../ThirdParty/imgui/imgui_demo.cpp; sourceTree = "<group>"; };
+		4718498C1E514FA80029BF33 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = ../ThirdParty/imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		4718498D1E514FA80029BF33 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = ../ThirdParty/imgui/imgui_internal.h; sourceTree = "<group>"; };
+		4718498E1E514FA80029BF33 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = ../ThirdParty/imgui/imgui.cpp; sourceTree = "<group>"; };
+		4718498F1E514FA80029BF33 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = ../ThirdParty/imgui/imgui.h; sourceTree = "<group>"; };
+		471849921E514FA80029BF33 /* stb_rect_pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_rect_pack.h; path = ../ThirdParty/imgui/stb_rect_pack.h; sourceTree = "<group>"; };
+		471849931E514FA80029BF33 /* stb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_textedit.h; path = ../ThirdParty/imgui/stb_textedit.h; sourceTree = "<group>"; };
+		471849941E514FA80029BF33 /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_truetype.h; path = ../ThirdParty/imgui/stb_truetype.h; sourceTree = "<group>"; };
+		47212CF91CD4D8F60039B7D7 /* LuaVM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LuaVM.cpp; path = Lua/LuaVM.cpp; sourceTree = "<group>"; };
+		47212CFA1CD4D8F60039B7D7 /* LuaVM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LuaVM.hpp; path = Lua/LuaVM.hpp; sourceTree = "<group>"; };
+		473AE6B11E3E23AE000AA375 /* ImGuiManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ImGuiManager.hpp; path = UI/ImGuiManager.hpp; sourceTree = "<group>"; };
+		473AE6B21E3E2794000AA375 /* ImGuiManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImGuiManager.cpp; path = UI/ImGuiManager.cpp; sourceTree = "<group>"; };
+		473CE7F31F887C0600AD6D56 /* PlayerCamera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerCamera.hpp; sourceTree = "<group>"; };
+		473CE7F41F887C7E00AD6D56 /* PlayerCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerCamera.cpp; sourceTree = "<group>"; };
+		473F9D031C90DF0300A8ED8E /* RyujinDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyujinDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		473F9D161C90E22C00A8ED8E /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = ../ThirdParty/tbb/lib/mac/libtbb.dylib; sourceTree = "<group>"; };
+		473F9D171C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc_proxy.dylib; path = ../ThirdParty/tbb/lib/mac/libtbbmalloc_proxy.dylib; sourceTree = "<group>"; };
+		473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = ../ThirdParty/tbb/lib/mac/libtbbmalloc.dylib; sourceTree = "<group>"; };
+		473F9D1C1C90E26A00A8ED8E /* RyujinDebug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RyujinDebug-Info.plist"; sourceTree = "<group>"; };
+		473F9D201C90E2F100A8ED8E /* Splash */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Splash; path = ../EngineResources/Splash; sourceTree = "<group>"; };
+		473F9D2D1C90FE3000A8ED8E /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		473F9D2F1C90FE8F00A8ED8E /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		473F9D301C90FE8F00A8ED8E /* Engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Engine.hpp; sourceTree = "<group>"; };
+		473F9D321C9104CA00A8ED8E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		473F9D341C9104D400A8ED8E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4743D0391C9132CC0098B41C /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Config; path = ../../Content/Config; sourceTree = "<group>"; };
+		4743D03A1C9132CC0098B41C /* CookedMac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CookedMac; path = ../../Content/CookedMac; sourceTree = "<group>"; };
+		4749ED111CA8262400F12506 /* TransformComponentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TransformComponentManager.cpp; path = ECS/TransformComponentManager.cpp; sourceTree = SOURCE_ROOT; };
+		4749ED121CA8262400F12506 /* TransformComponentManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TransformComponentManager.hpp; path = ECS/TransformComponentManager.hpp; sourceTree = SOURCE_ROOT; };
+		4749ED151CA826BA00F12506 /* ComponentManagerCommon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ComponentManagerCommon.hpp; path = ECS/ComponentManagerCommon.hpp; sourceTree = SOURCE_ROOT; };
+		4749ED161CA827BC00F12506 /* EntityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EntityManager.cpp; path = ECS/EntityManager.cpp; sourceTree = SOURCE_ROOT; };
+		4749ED171CA827BC00F12506 /* EntityManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EntityManager.hpp; path = ECS/EntityManager.hpp; sourceTree = SOURCE_ROOT; };
+		4749ED191CA8286300F12506 /* TagManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TagManager.cpp; path = ECS/TagManager.cpp; sourceTree = SOURCE_ROOT; };
+		4749ED1A1CA8286300F12506 /* TagManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TagManager.hpp; path = ECS/TagManager.hpp; sourceTree = SOURCE_ROOT; };
+		4749ED1C1CA828EA00F12506 /* MeshComponentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshComponentManager.cpp; path = ECS/MeshComponentManager.cpp; sourceTree = SOURCE_ROOT; };
+		4749ED1D1CA828EA00F12506 /* MeshComponentManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MeshComponentManager.hpp; path = ECS/MeshComponentManager.hpp; sourceTree = SOURCE_ROOT; };
+		4749ED1F1CA829BA00F12506 /* ECS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ECS.hpp; path = ECS/ECS.hpp; sourceTree = SOURCE_ROOT; };
+		474CB33E1DB166B600106804 /* default.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; name = default.metallib; path = ../../_Build/Mac/Debug/default.metallib; sourceTree = "<group>"; };
+		475114D21D17762B00C77A39 /* libRyujinCore_d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinCore_d.dylib; path = ../_Build/Mac/Debug/libRyujinCore_d.dylib; sourceTree = "<group>"; };
+		475114D31D17762B00C77A39 /* libRyujinRendererMetal_d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinRendererMetal_d.dylib; path = ../_Build/Mac/Debug/libRyujinRendererMetal_d.dylib; sourceTree = "<group>"; };
+		475114D91D17772200C77A39 /* libRyujinRendererMetal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinRendererMetal.dylib; path = ../_Build/Mac/Release/libRyujinRendererMetal.dylib; sourceTree = "<group>"; };
+		4784BE241E1AA077006A5A16 /* libRyujinExtensions_d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinExtensions_d.dylib; path = ../_Build/Mac/Debug/libRyujinExtensions_d.dylib; sourceTree = "<group>"; };
+		4784BE2C1E1AA474006A5A16 /* libRyujinExtensions.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinExtensions.dylib; path = ../_Build/Mac/Release/libRyujinExtensions.dylib; sourceTree = "<group>"; };
+		47C420A11E2186630034C6B2 /* libRyujinCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinCore.dylib; path = ../_Build/Mac/Release/libRyujinCore.dylib; sourceTree = "<group>"; };
+		47C420A31E21873D0034C6B2 /* libRyujinCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libRyujinCore.dylib; path = ../_Build/Mac/Release/libRyujinCore.dylib; sourceTree = "<group>"; };
+		47D202671C851AF200F253EF /* Ryujin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryujin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D2026A1C851AF200F253EF /* RyujinApp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RyujinApp.hpp; sourceTree = "<group>"; };
+		47D2026B1C851AF200F253EF /* RyujinApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RyujinApp.mm; sourceTree = "<group>"; };
+		47D202701C851AF200F253EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47D202731C851AF200F253EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		47D202751C851AF200F253EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D202C21C85518C00F253EF /* ModelResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModelResourceManager.hpp; path = ResourceManagers/ModelResourceManager.hpp; sourceTree = SOURCE_ROOT; };
+		47D202C41C85518C00F253EF /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ResourceManager.hpp; path = ResourceManagers/ResourceManager.hpp; sourceTree = SOURCE_ROOT; };
+		47D202C51C85518C00F253EF /* ResourceTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceTypes.cpp; path = ResourceManagers/ResourceTypes.cpp; sourceTree = SOURCE_ROOT; };
+		47D202C61C85518C00F253EF /* ResourceTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ResourceTypes.hpp; path = ResourceManagers/ResourceTypes.hpp; sourceTree = SOURCE_ROOT; };
+		47D202C71C85518C00F253EF /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = SceneManagement/Scene.cpp; sourceTree = SOURCE_ROOT; };
+		47D202C81C85518C00F253EF /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scene.hpp; path = SceneManagement/Scene.hpp; sourceTree = SOURCE_ROOT; };
+		47D202C91C85518C00F253EF /* TextureResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TextureResourceManager.hpp; path = ResourceManagers/TextureResourceManager.hpp; sourceTree = SOURCE_ROOT; };
+		47D202CA1C85518C00F253EF /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = SceneManagement/World.cpp; sourceTree = SOURCE_ROOT; };
+		47D202CB1C85518C00F253EF /* World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = World.hpp; path = SceneManagement/World.hpp; sourceTree = SOURCE_ROOT; };
+		47EAAE2E1CCBBE7E007E711D /* IOBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = IOBase.hpp; path = IO/IOBase.hpp; sourceTree = "<group>"; };
+		47EAAE2F1CCBC303007E711D /* IOBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOBase.cpp; path = IO/IOBase.cpp; sourceTree = "<group>"; };
+		47EAAE311CCBC47E007E711D /* IO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IO.cpp; path = IO/IO.cpp; sourceTree = "<group>"; };
+		47EAAE321CCBC47E007E711D /* IO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IO.hpp; path = IO/IO.hpp; sourceTree = "<group>"; };
+		47F838B91F6E3B62005F4464 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = ../../_Build/Mac/Shaders; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		473F9CFC1C90DF0300A8ED8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4784BE251E1AA077006A5A16 /* libRyujinExtensions_d.dylib in Frameworks */,
+				475114D41D17762B00C77A39 /* libRyujinCore_d.dylib in Frameworks */,
+				475114D51D17762B00C77A39 /* libRyujinRendererMetal_d.dylib in Frameworks */,
+				4749ED8F1CC27D2900F12506 /* libtbb.dylib in Frameworks */,
+				4749ED911CC27D2900F12506 /* libtbbmalloc.dylib in Frameworks */,
+				473F9D361C9104EB00A8ED8E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D202641C851AF200F253EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C420A21E2186630034C6B2 /* libRyujinCore.dylib in Frameworks */,
+				4784BE2D1E1AA474006A5A16 /* libRyujinExtensions.dylib in Frameworks */,
+				475114DD1D17776500C77A39 /* libRyujinRendererMetal.dylib in Frameworks */,
+				4749ED951CC3171500F12506 /* libtbb.dylib in Frameworks */,
+				4749ED961CC3171500F12506 /* libtbbmalloc.dylib in Frameworks */,
+				473F9D351C9104D400A8ED8E /* Cocoa.framework in Frameworks */,
+				473F9D331C9104CA00A8ED8E /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470098BD1C94688B00656A1E /* ResourceManagers */ = {
+			isa = PBXGroup;
+			children = (
+				47D202C21C85518C00F253EF /* ModelResourceManager.hpp */,
+				47D202C41C85518C00F253EF /* ResourceManager.hpp */,
+				47D202C51C85518C00F253EF /* ResourceTypes.cpp */,
+				47D202C61C85518C00F253EF /* ResourceTypes.hpp */,
+				47D202C91C85518C00F253EF /* TextureResourceManager.hpp */,
+			);
+			name = ResourceManagers;
+			sourceTree = "<group>";
+		};
+		4718499A1E514FAF0029BF33 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				4718498A1E514FA80029BF33 /* imconfig.h */,
+				4718498B1E514FA80029BF33 /* imgui_demo.cpp */,
+				4718498C1E514FA80029BF33 /* imgui_draw.cpp */,
+				4718498D1E514FA80029BF33 /* imgui_internal.h */,
+				4718498E1E514FA80029BF33 /* imgui.cpp */,
+				4718498F1E514FA80029BF33 /* imgui.h */,
+				471849921E514FA80029BF33 /* stb_rect_pack.h */,
+				471849931E514FA80029BF33 /* stb_textedit.h */,
+				471849941E514FA80029BF33 /* stb_truetype.h */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		47212CF81CD4D8D10039B7D7 /* Lua */ = {
+			isa = PBXGroup;
+			children = (
+				47212CF91CD4D8F60039B7D7 /* LuaVM.cpp */,
+				47212CFA1CD4D8F60039B7D7 /* LuaVM.hpp */,
+			);
+			name = Lua;
+			sourceTree = "<group>";
+		};
+		473AE6B01E3E238B000AA375 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4718499A1E514FAF0029BF33 /* imgui */,
+				473AE6B21E3E2794000AA375 /* ImGuiManager.cpp */,
+				473AE6B11E3E23AE000AA375 /* ImGuiManager.hpp */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		473F9D0D1C90DF4E00A8ED8E /* _Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47C420A31E21873D0034C6B2 /* libRyujinCore.dylib */,
+				473F9D341C9104D400A8ED8E /* Cocoa.framework */,
+				473F9D321C9104CA00A8ED8E /* CoreFoundation.framework */,
+				475114D21D17762B00C77A39 /* libRyujinCore_d.dylib */,
+				4784BE241E1AA077006A5A16 /* libRyujinExtensions_d.dylib */,
+				4784BE2C1E1AA474006A5A16 /* libRyujinExtensions.dylib */,
+				475114D31D17762B00C77A39 /* libRyujinRendererMetal_d.dylib */,
+				475114D91D17772200C77A39 /* libRyujinRendererMetal.dylib */,
+				473F9D161C90E22C00A8ED8E /* libtbb.dylib */,
+				473F9D171C90E22C00A8ED8E /* libtbbmalloc_proxy.dylib */,
+				473F9D181C90E22C00A8ED8E /* libtbbmalloc.dylib */,
+			);
+			name = _Frameworks;
+			sourceTree = "<group>";
+		};
+		4749ED141CA8263A00F12506 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				4749ED151CA826BA00F12506 /* ComponentManagerCommon.hpp */,
+				4749ED1F1CA829BA00F12506 /* ECS.hpp */,
+				4749ED161CA827BC00F12506 /* EntityManager.cpp */,
+				4749ED171CA827BC00F12506 /* EntityManager.hpp */,
+				4749ED1C1CA828EA00F12506 /* MeshComponentManager.cpp */,
+				4749ED1D1CA828EA00F12506 /* MeshComponentManager.hpp */,
+				4749ED191CA8286300F12506 /* TagManager.cpp */,
+				4749ED1A1CA8286300F12506 /* TagManager.hpp */,
+				4749ED111CA8262400F12506 /* TransformComponentManager.cpp */,
+				4749ED121CA8262400F12506 /* TransformComponentManager.hpp */,
+			);
+			name = ECS;
+			path = Ryujin;
+			sourceTree = "<group>";
+		};
+		47C420A01E2186630034C6B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47C420A11E2186630034C6B2 /* libRyujinCore.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47D2025E1C851AF200F253EF = {
+			isa = PBXGroup;
+			children = (
+				473F9D0D1C90DF4E00A8ED8E /* _Frameworks */,
+				47D202681C851AF200F253EF /* _Products */,
+				47D2029E1C85307E00F253EF /* _Resources */,
+				4749ED141CA8263A00F12506 /* ECS */,
+				47C420A01E2186630034C6B2 /* Frameworks */,
+				47EAAE2D1CCBBE45007E711D /* IO */,
+				47212CF81CD4D8D10039B7D7 /* Lua */,
+				470098BD1C94688B00656A1E /* ResourceManagers */,
+				47D202691C851AF200F253EF /* Ryujin */,
+				47D2027B1C8522A700F253EF /* SceneManagement */,
+				473AE6B01E3E238B000AA375 /* UI */,
+			);
+			sourceTree = "<group>";
+		};
+		47D202681C851AF200F253EF /* _Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D202671C851AF200F253EF /* Ryujin.app */,
+				473F9D031C90DF0300A8ED8E /* RyujinDebug.app */,
+			);
+			name = _Products;
+			sourceTree = "<group>";
+		};
+		47D202691C851AF200F253EF /* Ryujin */ = {
+			isa = PBXGroup;
+			children = (
+				473F9D2F1C90FE8F00A8ED8E /* Engine.cpp */,
+				473F9D301C90FE8F00A8ED8E /* Engine.hpp */,
+				473F9D2D1C90FE3000A8ED8E /* Main.cpp */,
+				473CE7F41F887C7E00AD6D56 /* PlayerCamera.cpp */,
+				473CE7F31F887C0600AD6D56 /* PlayerCamera.hpp */,
+				47D2026A1C851AF200F253EF /* RyujinApp.hpp */,
+				47D2026B1C851AF200F253EF /* RyujinApp.mm */,
+				470098C51C95BBDD00656A1E /* Versions.hpp */,
+			);
+			path = Ryujin;
+			sourceTree = "<group>";
+		};
+		47D2027B1C8522A700F253EF /* SceneManagement */ = {
+			isa = PBXGroup;
+			children = (
+				47D202C71C85518C00F253EF /* Scene.cpp */,
+				47D202C81C85518C00F253EF /* Scene.hpp */,
+				47D202CA1C85518C00F253EF /* World.cpp */,
+				47D202CB1C85518C00F253EF /* World.hpp */,
+			);
+			name = SceneManagement;
+			path = Ryujin;
+			sourceTree = "<group>";
+		};
+		47D2029E1C85307E00F253EF /* _Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47F838B91F6E3B62005F4464 /* Shaders */,
+				47D202701C851AF200F253EF /* Assets.xcassets */,
+				4743D0391C9132CC0098B41C /* Config */,
+				4743D03A1C9132CC0098B41C /* CookedMac */,
+				474CB33E1DB166B600106804 /* default.metallib */,
+				47D202751C851AF200F253EF /* Info.plist */,
+				47D202721C851AF200F253EF /* MainMenu.xib */,
+				473F9D1C1C90E26A00A8ED8E /* RyujinDebug-Info.plist */,
+				473F9D201C90E2F100A8ED8E /* Splash */,
+			);
+			name = _Resources;
+			path = Ryujin;
+			sourceTree = "<group>";
+		};
+		47EAAE2D1CCBBE45007E711D /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				47EAAE311CCBC47E007E711D /* IO.cpp */,
+				47EAAE321CCBC47E007E711D /* IO.hpp */,
+				47EAAE2F1CCBC303007E711D /* IOBase.cpp */,
+				47EAAE2E1CCBBE7E007E711D /* IOBase.hpp */,
+			);
+			name = IO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		473F9CF41C90DF0300A8ED8E /* RyujinDebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473F9D001C90DF0300A8ED8E /* Build configuration list for PBXNativeTarget "RyujinDebug" */;
+			buildPhases = (
+				473F9CF51C90DF0300A8ED8E /* Sources */,
+				473F9CFC1C90DF0300A8ED8E /* Frameworks */,
+				473F9CFD1C90DF0300A8ED8E /* Resources */,
+				473F9D111C90E1A100A8ED8E /* CopyFiles */,
+				473F9D1F1C90E2DE00A8ED8E /* CopyFiles */,
+				47F5A0C91F5F8588000B9183 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyujinDebug;
+			productName = Ryujin;
+			productReference = 473F9D031C90DF0300A8ED8E /* RyujinDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47D202661C851AF200F253EF /* Ryujin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D202781C851AF200F253EF /* Build configuration list for PBXNativeTarget "Ryujin" */;
+			buildPhases = (
+				47D202631C851AF200F253EF /* Sources */,
+				47D202641C851AF200F253EF /* Frameworks */,
+				47D202651C851AF200F253EF /* Resources */,
+				473F9DA21C911D0A00A8ED8E /* CopyFiles */,
+				473F9DA81C911D2B00A8ED8E /* CopyFiles */,
+				4743D0381C9132BA0098B41C /* CopyFiles */,
+				47F838B51F6E3A53005F4464 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ryujin;
+			productName = Ryujin;
+			productReference = 47D202671C851AF200F253EF /* Ryujin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D2025F1C851AF200F253EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Xavi;
+				TargetAttributes = {
+					47D202661C851AF200F253EF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 47D202621C851AF200F253EF /* Build configuration list for PBXProject "Ryujin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47D2025E1C851AF200F253EF;
+			productRefGroup = 47D202681C851AF200F253EF /* _Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D202661C851AF200F253EF /* Ryujin */,
+				473F9CF41C90DF0300A8ED8E /* RyujinDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		473F9CFD1C90DF0300A8ED8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473F9CFE1C90DF0300A8ED8E /* Assets.xcassets in Resources */,
+				473F9CFF1C90DF0300A8ED8E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D202651C851AF200F253EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D202711C851AF200F253EF /* Assets.xcassets in Resources */,
+				47D202741C851AF200F253EF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		473F9CF51C90DF0300A8ED8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EAAE351CCC1F15007E711D /* IO.cpp in Sources */,
+				47212CFC1CD4FF490039B7D7 /* LuaVM.cpp in Sources */,
+				473F9DA11C91191B00A8ED8E /* Engine.cpp in Sources */,
+				471849891E514D940029BF33 /* ImGuiManager.cpp in Sources */,
+				473F9DA01C9118DB00A8ED8E /* Main.cpp in Sources */,
+				473F9CF81C90DF0300A8ED8E /* World.cpp in Sources */,
+				473F9CF91C90DF0300A8ED8E /* RyujinApp.mm in Sources */,
+				4718499C1E514FEB0029BF33 /* imgui_draw.cpp in Sources */,
+				4749ED221CA82DBA00F12506 /* MeshComponentManager.cpp in Sources */,
+				473F9CFA1C90DF0300A8ED8E /* Scene.cpp in Sources */,
+				47EAAE341CCBCADA007E711D /* IOBase.cpp in Sources */,
+				4749ED211CA82DAA00F12506 /* EntityManager.cpp in Sources */,
+				4749ED231CA82E0D00F12506 /* TagManager.cpp in Sources */,
+				473CE7F61F888E6100AD6D56 /* PlayerCamera.cpp in Sources */,
+				4749ED241CA82E1100F12506 /* TransformComponentManager.cpp in Sources */,
+				473F9CFB1C90DF0300A8ED8E /* ResourceTypes.cpp in Sources */,
+				4718499B1E514FDD0029BF33 /* imgui.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D202631C851AF200F253EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EAAE331CCBC47E007E711D /* IO.cpp in Sources */,
+				47212CFB1CD4D8F60039B7D7 /* LuaVM.cpp in Sources */,
+				4749ED201CA82C0A00F12506 /* TagManager.cpp in Sources */,
+				473AE6B31E3E2794000AA375 /* ImGuiManager.cpp in Sources */,
+				4749ED131CA8262400F12506 /* TransformComponentManager.cpp in Sources */,
+				4749ED181CA827BC00F12506 /* EntityManager.cpp in Sources */,
+				473F9D2E1C90FE3000A8ED8E /* Main.cpp in Sources */,
+				471849961E514FA80029BF33 /* imgui_draw.cpp in Sources */,
+				47D202CF1C85518C00F253EF /* World.cpp in Sources */,
+				471849951E514FA80029BF33 /* imgui_demo.cpp in Sources */,
+				473CE7F51F887C7E00AD6D56 /* PlayerCamera.cpp in Sources */,
+				471849971E514FA80029BF33 /* imgui.cpp in Sources */,
+				47D2026C1C851AF200F253EF /* RyujinApp.mm in Sources */,
+				47EAAE301CCBC303007E711D /* IOBase.cpp in Sources */,
+				473F9D311C90FE8F00A8ED8E /* Engine.cpp in Sources */,
+				47D202CE1C85518C00F253EF /* Scene.cpp in Sources */,
+				4749ED1E1CA828EA00F12506 /* MeshComponentManager.cpp in Sources */,
+				47D202CD1C85518C00F253EF /* ResourceTypes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47D202721C851AF200F253EF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D202731C851AF200F253EF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		473F9D011C90DF0300A8ED8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Debug;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "Ryujin/RyujinDebug-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Core/../_Build/Mac/Debug",
+					"$(PROJECT_DIR)Renderer/../_Build/Mac/Debug",
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+					"$(PROJECT_DIR)/../ThirdParty/lua-5.3.2/lib/Mac",
+				);
+				OTHER_LDFLAGS = "-llua";
+				PRODUCT_BUNDLE_IDENTIFIER = xavi.Ryujin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		473F9D021C90DF0300A8ED8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Release;
+				INFOPLIST_FILE = "Ryujin/RyujinDebug-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Core/../_Build/Mac/Debug",
+					"$(PROJECT_DIR)Renderer/../_Build/Mac/Debug",
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+					"$(PROJECT_DIR)/../ThirdParty/lua-5.3.2/lib/Mac",
+				);
+				OTHER_LDFLAGS = "-llua";
+				PRODUCT_BUNDLE_IDENTIFIER = xavi.Ryujin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47D202761C851AF200F253EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"USE_TBB=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/tbb/include,
+					../,
+					../ThirdParty/stb,
+					"../ThirdParty/lua-5.3.2/src",
+					../ThirdParty,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		47D202771C851AF200F253EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_TBB=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/tbb/include,
+					../,
+					../ThirdParty/stb,
+					"../ThirdParty/lua-5.3.2/src",
+					../ThirdParty,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-conversion",
+					"-Wno-switch-enum",
+					"-Wno-unused-value",
+					"-Wno-enum-conversion",
+					"-Wno-switch",
+					"-Wno-tautological-compare",
+					"-Wno-unused-const-variable",
+					"-x",
+					"objective-c++",
+					"-Wno-inline-new-delete",
+				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		47D202791C851AF200F253EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Debug;
+				INFOPLIST_FILE = Ryujin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					../_Build/Mac/Release,
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+					"$(PROJECT_DIR)/../ThirdParty/lua-5.3.2/lib/Mac",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-llua",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xavi.Ryujin;
+				PRODUCT_NAME = Ryujin;
+			};
+			name = Debug;
+		};
+		47D2027A1C851AF200F253EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../_Build/Mac/Release;
+				INFOPLIST_FILE = Ryujin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					../_Build/Mac/Release,
+					"$(PROJECT_DIR)/../ThirdParty/tbb/lib/mac",
+					"$(PROJECT_DIR)/../ThirdParty/lua-5.3.2/lib/Mac",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-llua",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xavi.Ryujin;
+				PRODUCT_NAME = Ryujin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		473F9D001C90DF0300A8ED8E /* Build configuration list for PBXNativeTarget "RyujinDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473F9D011C90DF0300A8ED8E /* Debug */,
+				473F9D021C90DF0300A8ED8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D202621C851AF200F253EF /* Build configuration list for PBXProject "Ryujin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D202761C851AF200F253EF /* Debug */,
+				47D202771C851AF200F253EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D202781C851AF200F253EF /* Build configuration list for PBXNativeTarget "Ryujin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D202791C851AF200F253EF /* Debug */,
+				47D2027A1C851AF200F253EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D2025F1C851AF200F253EF /* Project object */;
+}

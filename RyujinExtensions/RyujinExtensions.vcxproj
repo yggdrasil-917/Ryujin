@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetManagement\AssetRegistry.cpp" />
+    <ClCompile Include="AssetManagement\ResourceFactory.cpp" />
+    <ClCompile Include="Audio\AudioDevice.cpp" />
+    <ClCompile Include="Audio\AudioUtils.cpp" />
+    <ClCompile Include="Audio\OpenALDevice.cpp" />
+    <ClCompile Include="EntitySystem\Component.cpp" />
+    <ClCompile Include="EntitySystem\Entity.cpp" />
+    <ClCompile Include="EntitySystem\TransformComponent.cpp" />
+    <ClCompile Include="Utils\SymbolLocator.cpp" />
+    <ClCompile Include="Utils\Tickable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetManagement\AssetRegistry.hpp" />
+    <ClInclude Include="AssetManagement\Resource.hpp" />
+    <ClInclude Include="AssetManagement\ResourceFactory.hpp" />
+    <ClInclude Include="Audio\AudioDevice.hpp" />
+    <ClInclude Include="Audio\AudioUtils.hpp" />
+    <ClInclude Include="Audio\OpenALDevice.hpp" />
+    <ClInclude Include="EntitySystem\Component.hpp" />
+    <ClInclude Include="EntitySystem\Entity.hpp" />
+    <ClInclude Include="EntitySystem\TransformComponent.hpp" />
+    <ClInclude Include="Utils\ExtensionsBase.hpp" />
+    <ClInclude Include="Utils\SymbolLocator.hpp" />
+    <ClInclude Include="Utils\Tickable.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B3ABE0C-9A47-473F-87D3-8845ABD43C18}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RyujinExtensions</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(SolutionDir)ThirdParty\OpenAL-1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(ProjectDir)..\ThirdParty\OpenAL-1.1\libs\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(SolutionDir)ThirdParty\OpenAL-1.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(ProjectDir)..\ThirdParty\OpenAL-1.1\libs\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RYUJINEXTENSIONS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;RYUJIN_EXTENSIONS_EXPORT;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);USE_VULKAN=1;USE_TBB=1</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenAL32.lib;vulkan-1.lib;DbgHelp.lib;tbb_debug.lib;tbbmalloc_debug.lib;RyujinCore.lib;RyujinRenderer.lib;%(AdditionalDependencies);vulkan-1.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RYUJINEXTENSIONS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FORCE_ENABLE_VULKAN_VALIDATION;RYUJIN_EXTENSIONS_EXPORT;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);USE_VULKAN=1;USE_TBB=1</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+      <AdditionalOptions>/analyze:stacksize1048576 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenAL32.lib;vulkan-1.lib;DbgHelp.lib;tbb.lib;tbbmalloc.lib;RyujinCore.lib;RyujinRenderer.lib;%(AdditionalDependencies);vulkan-1.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

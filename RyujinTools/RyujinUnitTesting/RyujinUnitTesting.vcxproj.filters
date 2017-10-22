@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{03fa15ea-1d1e-41e4-abcb-6854774b777d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RyujinUnitTesting">
+      <UniqueIdentifier>{4fcf9441-0ce6-43d1-b6df-fd31f32df7fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tests\BitfieldTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\DynamicArrayTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\HashTableTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\JobSystemTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\MiscTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\QueueTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\SmartPointerTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\StringTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="RyujinUnitTesting\main.cpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClCompile>
+    <ClCompile Include="RyujinUnitTesting\RyujinUnitTesting.cpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClCompile>
+    <ClCompile Include="RyujinUnitTesting\TestCase.cpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RyujinUnitTesting\Macros.hpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClInclude>
+    <ClInclude Include="RyujinUnitTesting\RyujinUnitTesting.hpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClInclude>
+    <ClInclude Include="RyujinUnitTesting\TestCase.hpp">
+      <Filter>RyujinUnitTesting</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
