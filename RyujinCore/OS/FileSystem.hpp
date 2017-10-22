@@ -450,6 +450,18 @@ namespace Ryujin
         static bool CopyAllFiles(String sorc, String dest)
         {
 #if PLATFORM_WINDOWS
+			DynamicArray<String> files;
+			if (GetFiles(sorc, files) == false)
+				return false;
+
+			for (const String& file : files)
+			{
+				String src = String::Printf("%s/%s", *sorc, *file);
+				String dst = String::Printf("%s/%s", *dest, *file);
+				File::Copy(src, dst);
+			}
+
+			return true;
 #else
             DIR *dir;
             struct dirent *ent;
