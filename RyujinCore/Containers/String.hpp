@@ -96,7 +96,7 @@ namespace Ryujin
         String ToLower() const
         {
             String lower(*this);
-            for (uint32 i = 0; i < lower.Length(); ++i)
+            for (int32 i = 0; i < lower.Length(); ++i)
             {
                 char c = lower[i];
                 if (c >= 'A' && c <= 'Z')
@@ -111,7 +111,7 @@ namespace Ryujin
         String ToUpper() const
         {
             String upper(*this);
-            for (uint32 i = 0; i < upper.Length(); ++i)
+            for (int32 i = 0; i < upper.Length(); ++i)
             {
                 char c = upper[i];
                 if (c >= 'a' && c <= 'z')
