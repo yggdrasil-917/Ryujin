@@ -39,7 +39,7 @@ namespace Ryujin
 
 		numObjects = numPoolObjects;
 		pool = RYUJIN_NEW T[numPoolObjects];
-        for (int32 i = 0; i < numObjects; ++i)
+        for (uint32 i = 0; i < numObjects; ++i)
         {
             freeList.Allocate(i);
         }
@@ -64,7 +64,7 @@ namespace Ryujin
 	template<class T>
 	void MemoryPool<T>::Free(T*& object)
 	{
-        int32 index = ((uintptr)object - (uintptr)pool) / sizeof(T);
+        uint32 index = uint32(((uintptr)object - (uintptr)pool) / sizeof(T));
         RYUJIN_ASSERT(index >= 0 && index < numObjects, "Index out of bounds");
         
         object = nullptr;

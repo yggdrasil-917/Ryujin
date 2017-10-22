@@ -42,6 +42,15 @@
     <ClCompile Include="RyujinUnitTesting\TestCase.cpp">
       <Filter>RyujinUnitTesting</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\BinaryTreeTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\DOTExporterTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\MathTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RyujinUnitTesting\Macros.hpp">

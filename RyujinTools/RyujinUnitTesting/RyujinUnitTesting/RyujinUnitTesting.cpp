@@ -1,5 +1,6 @@
 #include "RyujinUnitTesting.hpp"
 
+#include "RyujinCore/Containers/String.hpp"
 #include "RyujinCore/Containers/HashTable.hpp"
 #include "TestCase.hpp"
 
