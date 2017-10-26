@@ -10,6 +10,7 @@
 #include "Skybox.hpp"
 
 #include "RyujinCore/CoreUtils/ServiceLocator.hpp"
+#include "RyujinCore/Math/Transform.hpp"
 
 
 namespace Ryujin

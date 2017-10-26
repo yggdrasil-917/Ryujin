@@ -38,6 +38,12 @@ namespace Ryujin
 		return false;
 	}
 
+	VulkanDevice* VulkanDevice::Instance()
+	{
+		static VulkanDevice instance;
+		return &instance;
+	}
+
 	VkResult VulkanDevice::InitGlobalExtensionProperties(LayerProperties& props)
 	{
 		VkResult res;
@@ -1018,6 +1024,61 @@ namespace Ryujin
 
 			VK_CHECK_RESULT(vkEndCommandBuffer(commandBuffers[i]));
 		}
+	}
+
+	VertexBufferPtr VulkanDevice::NewVertexBuffer(const void* data, uint32 elementSize, uint32 count)
+	{
+		VertexBufferPtr vb(nullptr);
+		return vb;
+	}
+	IndexBufferPtr VulkanDevice::NewIndexBuffer(const void* data, uint32 elementSize, uint32 count, bool bIs16Bit)
+	{
+		IndexBufferPtr ib(nullptr);
+		return ib;
+	}
+	ConstantBufferPtr VulkanDevice::NewConstantBuffer(const void* data, uint64 bytes)
+	{
+		ConstantBufferPtr cb(nullptr);
+		return cb;
+	}
+
+	VulkanPipelineState* VulkanDevice::NewPipelineState(class VulkanShaderModule* library, const char* vertName, const char* fragName)
+	{
+		return nullptr;
+	}
+	VulkanPipelineState* VulkanDevice::NewPipelineState(class VulkanShaderModule* library, const RenderPipelineStateDescriptor& rpd)
+	{
+		return nullptr;
+	}
+
+	class VulkanTexture* VulkanDevice::NewTexture(uint16 width, uint16 height, PixelFormat format, bool mipmapped, TextureUsage usage)
+	{
+		return nullptr;
+	}
+	class VulkanTexture* VulkanDevice::NewTexture(const TextureDescriptor& desc)
+	{
+		return nullptr;
+	}
+
+	class VulkanCubemap* VulkanDevice::NewTextureCube(const TextureDescriptor& desc)
+	{
+		return nullptr;
+	}
+	class VulkanCubemapArray* VulkanDevice::NewTextureCubeArray(const TextureDescriptor& desc)
+	{
+		return nullptr;
+	}
+	class VulkanTextureArray* VulkanDevice::NewTextureArray(const TextureDescriptor& desc)
+	{
+		return nullptr;
+	}
+	class VulkanSampler* VulkanDevice::GetOrCreateSampler(SamplerDescriptor& desc)
+	{
+		return nullptr;
+	}
+	void VulkanDevice::CopyTextureToBackBuffer(class VulkanTexture* src, class VulkanBackBufferImage* dst)
+	{
+
 	}
 
 	void VulkanDevice::PrintDeviceInfo(const bool bPrintEverything /* = false */)

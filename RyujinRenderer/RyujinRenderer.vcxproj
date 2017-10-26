@@ -19,24 +19,46 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Renderer\Material.cpp" />
+    <ClCompile Include="Renderer\MaterialManager.cpp" />
     <ClCompile Include="Renderer\Model.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
     <ClCompile Include="Renderer\RendererCommands.cpp" />
+    <ClCompile Include="Renderer\RenderFeature.cpp" />
+    <ClCompile Include="Renderer\RenderTargetPool.cpp" />
     <ClCompile Include="Renderer\SceneView.cpp" />
+    <ClCompile Include="Renderer\Skybox.cpp" />
     <ClCompile Include="Renderer\VertexFormat.cpp" />
     <ClCompile Include="Renderer\Visibility.cpp" />
+    <ClCompile Include="RenderUtils\Color.cpp" />
     <ClCompile Include="RenderUtils\Image.cpp" />
     <ClCompile Include="RenderUtils\ImporterRmf.cpp" />
     <ClCompile Include="RenderUtils\ImporterWavefront.cpp" />
+    <ClCompile Include="RenderUtils\TextureUtils.cpp" />
     <ClCompile Include="RenderUtils\VertexWriter.cpp" />
     <ClCompile Include="Vulkan\VulkanBase.cpp" />
+    <ClCompile Include="Vulkan\VulkanBuffers.cpp" />
+    <ClCompile Include="Vulkan\VulkanCommandBuffer.cpp" />
+    <ClCompile Include="Vulkan\VulkanCommandEncoder.cpp" />
     <ClCompile Include="Vulkan\VulkanDevice.cpp" />
     <ClCompile Include="Vulkan\VulkanLoader.cpp" />
+    <ClCompile Include="Vulkan\VulkanPipelineState.cpp" />
     <ClCompile Include="Vulkan\VulkanRenderResourceFactory.cpp" />
+    <ClCompile Include="Vulkan\VulkanSwapChain.cpp" />
+    <ClCompile Include="Vulkan\VulkanTextures.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Renderer\Buffers.hpp" />
+    <ClInclude Include="Common\BufferBase.hpp" />
+    <ClInclude Include="Common\PipelineStateBase.hpp" />
+    <ClInclude Include="Common\RenderingUtils.hpp" />
+    <ClInclude Include="Common\ResourceDescriptors.hpp" />
+    <ClInclude Include="Common\ShaderBase.hpp" />
+    <ClInclude Include="Common\SwapChainBase.hpp" />
+    <ClInclude Include="Common\TextureBase.hpp" />
+    <ClInclude Include="Renderer\Buffer.hpp" />
     <ClInclude Include="Renderer\CommandBucket.hpp" />
+    <ClInclude Include="Renderer\Material.hpp" />
+    <ClInclude Include="Renderer\MaterialManager.hpp" />
     <ClInclude Include="Renderer\Model.hpp" />
     <ClInclude Include="Renderer\RenderCommandSortKey.hpp" />
     <ClInclude Include="Renderer\Renderer.hpp" />
@@ -44,26 +66,42 @@
     <ClInclude Include="Renderer\RendererCommands.hpp" />
     <ClInclude Include="Renderer\RendererCommon.hpp" />
     <ClInclude Include="Renderer\RendererConfig.hpp" />
+    <ClInclude Include="Renderer\RenderFeature.hpp" />
     <ClInclude Include="Renderer\RenderResourceFactory.hpp" />
     <ClInclude Include="Renderer\RenderResources.hpp" />
+    <ClInclude Include="Renderer\RenderTargetPool.hpp" />
     <ClInclude Include="Renderer\SceneView.hpp" />
+    <ClInclude Include="Renderer\ShaderCommon.hpp" />
+    <ClInclude Include="Renderer\ShaderCommonDefines.hpp" />
+    <ClInclude Include="Renderer\Skybox.hpp" />
     <ClInclude Include="Renderer\Textures.hpp" />
     <ClInclude Include="Renderer\VertexFormat.hpp" />
     <ClInclude Include="Renderer\Visibility.hpp" />
+    <ClInclude Include="RenderUtils\Color.hpp" />
     <ClInclude Include="RenderUtils\Image.hpp" />
     <ClInclude Include="RenderUtils\ImporterRmf.hpp" />
     <ClInclude Include="RenderUtils\ImporterWavefront.hpp" />
     <ClInclude Include="RenderUtils\MeshImporter.hpp" />
+    <ClInclude Include="RenderUtils\TextureUtils.hpp" />
     <ClInclude Include="RenderUtils\VertexWriter.hpp" />
+    <ClInclude Include="Vulkan\VulkanCommandBuffer.hpp" />
+    <ClInclude Include="Vulkan\VulkanCommandEncoder.hpp" />
+    <ClInclude Include="Vulkan\VulkanCommandQueue.hpp" />
     <ClInclude Include="Vulkan\VulkanDevice.hpp" />
+    <ClInclude Include="Vulkan\VulkanPipelineState.hpp" />
     <ClInclude Include="Vulkan\VulkanPipelineStateConfig.hpp" />
     <ClInclude Include="Vulkan\VulkanRendererCommon.hpp" />
+    <ClInclude Include="Vulkan\VulkanShader.hpp" />
+    <ClInclude Include="Vulkan\VulkanShaderModule.hpp" />
+    <ClInclude Include="Vulkan\VulkanSwapChain.hpp" />
     <ClInclude Include="Vulkan\VulkanTextures.hpp" />
     <ClInclude Include="Vulkan\VulkanBuffers.hpp" />
     <ClInclude Include="Vulkan\VulkanBase.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Renderer\CommandBucket.inl" />
+    <None Include="Shaders\MaterialTemplate.rsf" />
+    <None Include="Shaders\SimpleShader.rsf" />
     <None Include="Vulkan\VulkanFunctionList.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -122,8 +160,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -132,8 +170,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(ProjectDir)..\ThirdParty\Pix\Include;$(SolutionDir)ThirdParty\tbb\include;$(SolutionDir)ThirdParty\stb;$(SolutionDir)ThirdParty\vulkan\Include;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\ThirdParty\Pix\Lib;$(ProjectDir)..\ThirdParty\vulkan\Lib\windows;$(ProjectDir)..\ThirdParty\tbb\lib\intel64\vc14;$(SolutionDir)_Build\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <OutDir>$(SolutionDir)_Build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)_Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -157,7 +195,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;RYUJIN_RENDERER_EXPORT;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);USE_VULKAN=1;USE_TBB=1</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4251;4595;4267</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -191,7 +229,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FORCE_ENABLE_VULKAN_VALIDATION;RYUJIN_RENDERER_EXPORT;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);USE_VULKAN=1;USE_TBB=1</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4251;4595</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4251;4595;4267</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

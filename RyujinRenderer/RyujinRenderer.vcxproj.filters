@@ -10,6 +10,12 @@
     <Filter Include="Vulkan">
       <UniqueIdentifier>{84c0cf5f-646b-47e6-b976-37c5e85515f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7e81bb0a-0745-49c8-9fa8-53501f552405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{56536787-6a17-4948-bfa1-c84a683698ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RenderUtils\Image.cpp">
@@ -54,6 +60,45 @@
     <ClCompile Include="Vulkan\VulkanBase.cpp">
       <Filter>Vulkan</Filter>
     </ClCompile>
+    <ClCompile Include="Renderer\Material.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\MaterialManager.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RenderFeature.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RenderTargetPool.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Skybox.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils\Color.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils\TextureUtils.cpp">
+      <Filter>RenderUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanBuffers.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanCommandEncoder.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanCommandBuffer.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanPipelineState.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanTextures.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulkan\VulkanSwapChain.cpp">
+      <Filter>Vulkan</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RenderUtils\Image.hpp">
@@ -70,9 +115,6 @@
     </ClInclude>
     <ClInclude Include="RenderUtils\VertexWriter.hpp">
       <Filter>RenderUtils</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer\Buffers.hpp">
-      <Filter>Renderer</Filter>
     </ClInclude>
     <ClInclude Include="Renderer\CommandBucket.hpp">
       <Filter>Renderer</Filter>
@@ -134,6 +176,78 @@
     <ClInclude Include="Vulkan\VulkanPipelineStateConfig.hpp">
       <Filter>Vulkan</Filter>
     </ClInclude>
+    <ClInclude Include="Common\BufferBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PipelineStateBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\RenderingUtils.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ResourceDescriptors.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShaderBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\SwapChainBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\TextureBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Buffer.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Material.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\MaterialManager.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderFeature.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderTargetPool.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ShaderCommon.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ShaderCommonDefines.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Skybox.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\Color.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderUtils\TextureUtils.hpp">
+      <Filter>RenderUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanCommandQueue.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanCommandBuffer.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanCommandEncoder.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanPipelineState.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanSwapChain.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanShader.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan\VulkanShaderModule.hpp">
+      <Filter>Vulkan</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Renderer\CommandBucket.inl">
@@ -141,6 +255,12 @@
     </None>
     <None Include="Vulkan\VulkanFunctionList.inl">
       <Filter>Vulkan</Filter>
+    </None>
+    <None Include="Shaders\MaterialTemplate.rsf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\SimpleShader.rsf">
+      <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

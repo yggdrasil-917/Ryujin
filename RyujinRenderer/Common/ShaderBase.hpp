@@ -16,7 +16,7 @@ namespace Ryujin
         SS_Compute_Bit = 0x20
     };
     
-    class ShaderBase
+    class RENDER_API ShaderBase
     {
     protected:
         ShaderStage stage;

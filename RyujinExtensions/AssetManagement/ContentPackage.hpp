@@ -7,7 +7,7 @@
 #include "RyujinCore/CoreUtils/BinaryReader.hpp"
 #include "RyujinCore/CoreUtils/SmartPointer.hpp"
 
-#include "ExtensionsBase.hpp"
+#include "../Utils/ExtensionsBase.hpp"
 
 
 namespace Ryujin

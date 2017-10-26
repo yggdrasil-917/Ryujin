@@ -97,11 +97,13 @@ namespace Ryujin
     {
         static SamplerDescriptor samplerDesc =
         {
-            .r = SAM_ClampToEdge,
-            .s = SAM_ClampToEdge,
-            .minFilter = SMMF_Linear,
-            .magFilter = SMMF_Linear,
-            .mipFilter = SMF_Linear
+            SAM_ClampToEdge,
+			SAM_ClampToEdge,
+			SAM_ClampToEdge,
+            SMMF_Linear,
+            SMMF_Linear,
+            SMF_Linear,
+			4
         };
         
         rpd.label = "skybox";

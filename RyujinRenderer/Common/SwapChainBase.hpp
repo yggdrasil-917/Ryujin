@@ -6,7 +6,7 @@
 
 namespace Ryujin
 {
-    class SwapChainBase
+    class RENDER_API SwapChainBase
     {
     protected:
         uint16 width;

@@ -14,17 +14,6 @@ namespace Ryujin
 	}
 
 
-	UniquePtr<GALPipelineStateConfig> RenderResourceFactory::CreatePipelineStateConfig(const RenderPipelineStateDescriptor& desc)
-	{
-		return UniquePtr<GALPipelineStateConfig>(nullptr);
-	}
-
-	void RenderResourceFactory::DestroyPipelineStateConfig(UniquePtr<GALPipelineStateConfig>& pipelineState)
-	{
-
-	}
-
-
 	UniquePtr<GALTexture> RenderResourceFactory::CreateTexture(const TextureDescriptor& textureDesc, ubyte* data)
 	{
 		return UniquePtr<GALTexture>(nullptr);

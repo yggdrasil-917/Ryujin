@@ -66,6 +66,19 @@ namespace Ryujin
 	PFN_vkGetPhysicalDeviceSurfaceFormatsKHR vkGetPhysicalDeviceSurfaceFormatsKHR = nullptr;
 	PFN_vkGetPhysicalDeviceSurfacePresentModesKHR vkGetPhysicalDeviceSurfacePresentModesKHR = nullptr;
 
+	PFN_vkCreateBuffer vkCreateBuffer = nullptr;
+	PFN_vkDestroyBuffer vkDestroyBuffer = nullptr;
+	PFN_vkGetBufferMemoryRequirements vkGetBufferMemoryRequirements = nullptr;
+	PFN_vkAllocateMemory vkAllocateMemory = nullptr;
+	PFN_vkMapMemory vkMapMemory = nullptr;
+	PFN_vkUnmapMemory vkUnmapMemory = nullptr;
+	PFN_vkBindBufferMemory vkBindBufferMemory = nullptr;
+	PFN_vkFreeMemory vkFreeMemory = nullptr;
+	PFN_vkCmdDebugMarkerInsertEXT vkCmdDebugMarkerInsertEXT = nullptr;
+	PFN_vkCmdDebugMarkerEndEXT vkCmdDebugMarkerEndEXT = nullptr;
+
+	PFN_vkCmdDraw vkCmdDraw = nullptr;
+
 	// Windows functions
 #if PLATFORM_WINDOWS
 	PFN_vkCreateWin32SurfaceKHR vkCreateWin32SurfaceKHR = nullptr;
@@ -143,6 +156,20 @@ namespace Ryujin
 		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceSurfaceCapabilitiesKHR);
 		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceSurfaceFormatsKHR);
 		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceSurfacePresentModesKHR);
+
+		LoadVulkanFunction(vulkanModule, vkCreateBuffer);
+		LoadVulkanFunction(vulkanModule, vkDestroyBuffer);
+		LoadVulkanFunction(vulkanModule, vkGetBufferMemoryRequirements);
+		LoadVulkanFunction(vulkanModule, vkAllocateMemory);
+		LoadVulkanFunction(vulkanModule, vkMapMemory);
+		LoadVulkanFunction(vulkanModule, vkUnmapMemory);
+		LoadVulkanFunction(vulkanModule, vkBindBufferMemory);
+		LoadVulkanFunction(vulkanModule, vkFreeMemory);
+
+		LoadVulkanFunction(vulkanModule, vkCmdDebugMarkerInsertEXT);
+		LoadVulkanFunction(vulkanModule, vkCmdDebugMarkerEndEXT);
+
+		LoadVulkanFunction(vulkanModule, vkCmdDraw);
 
 #if PLATFORM_WINDOWS
 		LoadVulkanFunction(vulkanModule, vkCreateWin32SurfaceKHR);

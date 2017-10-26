@@ -24,7 +24,7 @@ namespace Ryujin
         [handle setVertexBytes:data length:size atIndex:slot];
     }
     
-    void MetalGfxEncoder::SetVertexBuffer(MetalVertexBuffer* buffer, uint32 offset, uint32 slot)
+    void MetalGfxEncoder::SetVertexBuffer(const MetalVertexBuffer* buffer, uint32 offset, uint32 slot)
     {
         [handle setVertexBuffer:buffer->GetHandle() offset:offset atIndex:slot];
     }

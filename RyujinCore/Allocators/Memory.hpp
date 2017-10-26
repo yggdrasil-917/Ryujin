@@ -86,7 +86,7 @@ namespace Ryujin
             return reinterpret_cast<T*>(calloc(count, sizeof(T)));
         }
 
-		static void MemCpy(void* dst, void* src, PtrSize size)
+		static void MemCpy(void* dst, const void* src, PtrSize size)
 		{
 			memcpy(dst, src, size);
         }

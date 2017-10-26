@@ -7,9 +7,11 @@
 
 namespace Ryujin
 {
-    class PipelineStateObjectBase
+    class RENDER_API PipelineStateObjectBase
     {
     protected:
         
+	public:
+		VIRTUAL ~PipelineStateObjectBase() {}
     };
 }

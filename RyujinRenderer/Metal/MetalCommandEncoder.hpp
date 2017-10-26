@@ -31,7 +31,7 @@ namespace Ryujin
         void PopDebugGroup();
         void SetPipelineState(const class MetalPipelineState* pso);
         void SetVertexBufferBytes(const void* data, uint64 size, uint32 slot);
-        void SetVertexBuffer(class MetalVertexBuffer* buffer, uint32 offset, uint32 slot);
+        void SetVertexBuffer(const class MetalVertexBuffer* buffer, uint32 offset, uint32 slot);
         void SetIndexBuffer(class MetalIndexBuffer* buffer, uint32 offset, uint32 slot);
         void SetVertexConstantBuffer(class MetalConstantBuffer* buffer, uint32 offset, uint32 slot);
         void SetFragmentConstantBuffer(class MetalConstantBuffer* buffer, uint32 offset, uint32 slot);

@@ -1,27 +1,70 @@
 #pragma once
 
 
-#include "../Renderer/RendererBase.hpp"
+#include "../Common/TextureBase.hpp"
+#include "../Common/ResourceDescriptors.hpp"
+#include "VulkanBase.hpp"
 
 
 namespace Ryujin
 {
-	class VulkanTexture
+	class RENDER_API VulkanTexture : public TextureBase
 	{
-	private:
-		VkSampler sampler;
+	protected:
+		//VkSampler sampler;
 
 		VkImage image;
 		VkImageLayout imageLayout;
 
 		VkDeviceMemory mem;
 		VkImageView view;
-		int32 width;
-		int32 height;
+
+	public:
+		VulkanTexture()
+		{
+			bIsCubemap = false;
+		}
+		VIRTUAL ~VulkanTexture() {}
+
+		bool Allocate(const TextureDescriptor& desc);
+		void Allocate(uint16 width, uint16 height, PixelFormat format, bool mipmapped, TextureUsage usage);
+		void UpdateTexture(Rect<uint16> region, uint8* data, uint8 mip, uint8 slice = 0);
+		void GenerateMips(class VulkanCommandQueue* queue);
+
+		FORCEINLINE VkImageView GetHandle() const { return view; }
 	};
 
-	class VulkanSampler
+	class RENDER_API VulkanSampler
+	{
+	private:
+		VkSampler handle;
+
+	public:
+		void Create(SamplerDescriptor& desc);
+
+		FORCEINLINE VkSampler GetHandle() const { return handle; }
+	};
+
+	class RENDER_API VulkanCubemap : public VulkanTexture
+	{
+	public:
+		VulkanCubemap()
+		{
+			bIsCubemap = true;
+		}
+	};
+
+	class RENDER_API VulkanTextureArray : public VulkanTexture
 	{
 
+	};
+
+	class RENDER_API VulkanCubemapArray : public VulkanTexture
+	{
+	public:
+		VulkanCubemapArray()
+		{
+			bIsCubemap = true;
+		}
 	};
 }

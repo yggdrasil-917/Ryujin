@@ -20,6 +20,7 @@
 
 #endif
 
+#include "Buffer.hpp"
 #include "Visibility.hpp"
 
 

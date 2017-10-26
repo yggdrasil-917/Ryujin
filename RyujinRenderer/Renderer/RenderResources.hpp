@@ -26,6 +26,25 @@ namespace Ryujin
 #define _TextureArrayCube MetalCubemapArray
 #define _TextureArray MetalTextureArray
 #define _Sampler MetalSampler
+#elif PLATFORM_WINDOWS
+#define _CommandEncoder VulkanCommandEncoder
+#define _GfxEncoder VulkanGfxEncoder
+#define _ComputeEncoder VulkanComputeEncoder
+#define _CommandBuffer VulkanCommandBuffer
+#define _CommandQueue VulkanCommandQueue
+#define _PipelineState VulkanPipelineState
+#define _ComputePipelineState VulkanComputePipelineState
+#define _GraphicsShader VulkanGraphicsShader
+#define _ComputeShader VulkanComputeShader
+#define _ShaderModule VulkanShaderModule
+#define _BackBufferImage VulkanBackBufferImage
+#define _SwapChain VulkanSwapChain
+#define _Device VulkanDevice
+#define _Texture VulkanTexture
+#define _TextureCube VulkanCubemap
+#define _TextureArrayCube VulkanCubemapArray
+#define _TextureArray VulkanTextureArray
+#define _Sampler VulkanSampler
 #endif
     
 //    class RENDER_API CommandEncoder : public _CommandEncoder
