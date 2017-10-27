@@ -7,7 +7,7 @@ namespace Ryujin
 	{
 		STARTUPINFO si;
 		PROCESS_INFORMATION pi;
-		char* args = new char[strlen(arguments)+1];
+		char* args = RYUJIN_NEW char[strlen(arguments)+1];
 		strcpy(args, arguments);
 
 		ZeroMemory(&si, sizeof(si));
