@@ -198,17 +198,17 @@ namespace Ryujin
 		VK_FORMAT_D32_SFLOAT_S8_UINT,
 	};
 
-	static const int32 gLoadAction[] = {
-		0,
-		1,
-		2,
+	static const VkAttachmentLoadOp gLoadAction[] = {
+		VK_ATTACHMENT_LOAD_OP_DONT_CARE,
+		VK_ATTACHMENT_LOAD_OP_CLEAR,
+		VK_ATTACHMENT_LOAD_OP_CLEAR,
 	};
 
-	static const int32 gStoreAction[] = {
-		0,
-		1,
-		2,
-		3,
+	static const VkAttachmentStoreOp gStoreAction[] = {
+		VK_ATTACHMENT_STORE_OP_DONT_CARE,
+		VK_ATTACHMENT_STORE_OP_STORE,
+		VK_ATTACHMENT_STORE_OP_STORE, // MSAA resolve
+		VK_ATTACHMENT_STORE_OP_STORE, // MSAA resolve and store
 	};
 
 #define CB_ALIGNMENT 256
