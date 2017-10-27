@@ -25,6 +25,9 @@ namespace Ryujin
 			delete args;
 			return;
 		}
+
+		CloseHandle(pi.hProcess);
+		CloseHandle(pi.hThread);
 		delete args;
 	}
 }
