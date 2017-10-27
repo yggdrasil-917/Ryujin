@@ -179,6 +179,7 @@
     <ClInclude Include="Containers\Stack.hpp" />
     <ClInclude Include="Containers\StackArray.hpp" />
     <ClInclude Include="Containers\String.hpp" />
+    <ClInclude Include="Containers\StringUtils.hpp" />
     <ClInclude Include="CoreUtils\BinaryReader.hpp" />
     <ClInclude Include="CoreUtils\BinaryWriter.hpp" />
     <ClInclude Include="CoreUtils\Common.hpp" />

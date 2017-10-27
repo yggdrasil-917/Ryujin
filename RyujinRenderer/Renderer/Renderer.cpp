@@ -170,7 +170,7 @@ namespace Ryujin
         ibTextured = GfxDevice::GetDevice()->NewIndexBuffer(indices, sizeof(uint16), countof(indices), true);
         sceneView.SetPosition(Vector3(0,0,5));
         sceneView.SetDirection(Vector3(0,0,-1), Vector3(0,1,0));
-        sceneView.SetPerspective(60, 640.0/320.0, 0.1);
+        sceneView.SetPerspective(60.0f, 640.0/320.0, 0.1f);
         sceneView.Update();
         worldMatrix.AddTranslation(Vector3(-1.5,0,0));
         worldMatrixTextured.AddTranslation(Vector3(1.5,0,0));
@@ -354,7 +354,7 @@ namespace Ryujin
         SceneView sceneView;
         sceneView.SetPosition(Vector3(0,0,3));
         sceneView.SetDirection(Vector3(0,0,-1), Vector3(0,1,0));
-        sceneView.SetPerspective(60, (float)inResX / (float)inResY, 0.1);
+        sceneView.SetPerspective(60.0f, (float)inResX / (float)inResY, 0.1f);
         sceneView.Update();
         views.Add(sceneView);
         

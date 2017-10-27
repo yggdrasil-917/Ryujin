@@ -1,12 +1,12 @@
-#ifndef STRING_HPP
-#define STRING_HPP
+#pragma once
 
 #include "DynamicArray.hpp"
 #include "FixedArray.hpp"
 
+#define SMALL_STRING_LENGTH 16
+
 #include <string>
 
-#define SMALL_STRING_LENGTH 16
 
 namespace Ryujin
 {
@@ -40,7 +40,7 @@ namespace Ryujin
         
         
     public:
-        String();
+		String();
         String(const char* src);
         String(const String& other);
         String(String&& other);
@@ -197,5 +197,3 @@ namespace Ryujin
 #define UTF32(str) Ustr
 };
 
-
-#endif

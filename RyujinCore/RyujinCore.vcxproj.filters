@@ -270,6 +270,7 @@
     <ClInclude Include="Math\PhysicsUtils.hpp">
       <Filter>Math</Filter>
     </ClInclude>
+    <ClInclude Include="Containers\StringUtils.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Allocators\Allocator.cpp">
