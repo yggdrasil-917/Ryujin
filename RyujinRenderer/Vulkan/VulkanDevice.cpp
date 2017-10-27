@@ -1,5 +1,6 @@
 
 #include "VulkanDevice.hpp"
+#include "VulkanBuffers.hpp"
 
 #include "RyujinCore/Window/Window.hpp"
 #include "RyujinCore/Input/Events.hpp"
@@ -1028,17 +1029,20 @@ namespace Ryujin
 
 	VertexBufferPtr VulkanDevice::NewVertexBuffer(const void* data, uint32 elementSize, uint32 count)
 	{
-		VertexBufferPtr vb(nullptr);
+		VertexBufferPtr vb(RYUJIN_NEW VertexBuffer());
+		vb->Create(data, elementSize, count);
 		return vb;
 	}
 	IndexBufferPtr VulkanDevice::NewIndexBuffer(const void* data, uint32 elementSize, uint32 count, bool bIs16Bit)
 	{
-		IndexBufferPtr ib(nullptr);
+		IndexBufferPtr ib(RYUJIN_NEW IndexBuffer());
+		ib->Create(data, elementSize, count, bIs16Bit);
 		return ib;
 	}
 	ConstantBufferPtr VulkanDevice::NewConstantBuffer(const void* data, uint64 bytes)
 	{
-		ConstantBufferPtr cb(nullptr);
+		ConstantBufferPtr cb(RYUJIN_NEW ConstantBuffer());
+		cb->Create(data, bytes);
 		return cb;
 	}
 
