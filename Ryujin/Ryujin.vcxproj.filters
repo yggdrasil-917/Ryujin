@@ -78,6 +78,9 @@
     <ClCompile Include="..\ThirdParty\imgui\imgui_draw.cpp">
       <Filter>UI\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="Ryujin\PlayerCamera.cpp">
+      <Filter>Ryujin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ryujin\Versions.hpp">
@@ -157,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="..\ThirdParty\imgui\stb_truetype.h">
       <Filter>UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ryujin\PlayerCamera.hpp">
+      <Filter>Ryujin</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

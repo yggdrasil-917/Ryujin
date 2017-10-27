@@ -9,7 +9,7 @@
 
 namespace Ryujin
 {
-    class Process
+    class CORE_API Process
     {
     private:
         int32 returnCode;

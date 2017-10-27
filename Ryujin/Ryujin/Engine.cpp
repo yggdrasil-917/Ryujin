@@ -99,7 +99,12 @@ namespace Ryujin
         wd += "../";
 #endif
         Debugf(Info, "Setting wd to %s", *wd);
+
+#if PLATFORM_WINDOWS
+		SetCurrentDirectory(*wd);
+#else
         chdir(*wd);
+#endif
 
 		// Delete old logs
 		String fileLogDir = String::Printf("%sLogs/", AppInfo::GetAppDataDir());
@@ -145,7 +150,7 @@ namespace Ryujin
         desc.lookAt = Vector3();
         desc.up = Vector3(0,1,0);
         desc.fov = 60.0f;
-        desc.nearPlane = 0.1;
+        desc.nearPlane = 0.1f;
         desc.farPlane = 0.0f;
         desc.acceleration = Vector3(0.1f);
         desc.horizRotationSpeed = 2.0f;

@@ -260,6 +260,7 @@
     <ClCompile Include="OS\ApplicationWindows.cpp" />
     <ClCompile Include="OS\Dllmain.cpp" />
     <ClCompile Include="OS\Platform.cpp" />
+    <ClCompile Include="OS\ProcessWindows.cpp" />
     <ClCompile Include="Profiler\ChromeProfiler.cpp" />
     <ClCompile Include="Profiler\PixProfiler.cpp" />
     <ClCompile Include="Profiler\Profiler.cpp" />

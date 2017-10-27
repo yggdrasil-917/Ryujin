@@ -168,6 +168,7 @@
     <ClCompile Include="ResourceManagers\ResourceTypes.cpp" />
     <ClCompile Include="Ryujin\Engine.cpp" />
     <ClCompile Include="Ryujin\Main.cpp" />
+    <ClCompile Include="Ryujin\PlayerCamera.cpp" />
     <ClCompile Include="SceneManagement\Scene.cpp" />
     <ClCompile Include="SceneManagement\World.cpp" />
     <ClCompile Include="UI\ImGuiManager.cpp" />
@@ -194,6 +195,7 @@
     <ClInclude Include="ResourceManagers\ResourceTypes.hpp" />
     <ClInclude Include="ResourceManagers\TextureResourceManager.hpp" />
     <ClInclude Include="Ryujin\Engine.hpp" />
+    <ClInclude Include="Ryujin\PlayerCamera.hpp" />
     <ClInclude Include="Ryujin\RyujinApp.hpp" />
     <ClInclude Include="Ryujin\Versions.hpp" />
     <ClInclude Include="SceneManagement\Scene.hpp" />

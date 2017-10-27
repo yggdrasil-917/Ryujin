@@ -378,6 +378,9 @@
     <ClCompile Include="Input\Mouse.cpp">
       <Filter>Input</Filter>
     </ClCompile>
+    <ClCompile Include="OS\ProcessWindows.cpp">
+      <Filter>OS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Math\MatrixSpecialization.inl">

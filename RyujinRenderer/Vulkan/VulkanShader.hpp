@@ -5,6 +5,8 @@
 
 namespace Ryujin
 {
+#define SHADER_EXT ".spv"
+
 	class RENDER_API VulkanShader : public ShaderBase
 	{
 
