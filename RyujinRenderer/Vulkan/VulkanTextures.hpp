@@ -19,10 +19,13 @@ namespace Ryujin
 		VkDeviceMemory mem;
 		VkImageView view;
 
+		class VulkanStagingBuffer* stagingBuffer;
+
 	public:
 		VulkanTexture()
 		{
 			bIsCubemap = false;
+			stagingBuffer = nullptr;
 		}
 		VIRTUAL ~VulkanTexture() {}
 
@@ -40,6 +43,8 @@ namespace Ryujin
 		VkSampler handle;
 
 	public:
+		~VulkanSampler();
+
 		void Create(SamplerDescriptor& desc);
 
 		FORCEINLINE VkSampler GetHandle() const { return handle; }

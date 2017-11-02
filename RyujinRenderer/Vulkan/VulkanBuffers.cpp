@@ -179,4 +179,61 @@ namespace Ryujin
 		// Note: Since we requested a host coherent memory type for the uniform buffer, the write is instantly visible to the GPU
 		vkUnmapMemory(device, memory);
 	}
+
+	VulkanStagingBuffer::~VulkanStagingBuffer()
+	{
+		VkDevice device = VulkanDevice::Instance()->GetDevice();
+		vkFreeMemory(device, memory, nullptr);
+		vkDestroyBuffer(device, handle, nullptr);
+	}
+
+	void VulkanStagingBuffer::Create(const void* data, uint64 size)
+	{
+		VkDevice device = VulkanDevice::Instance()->GetDevice();
+		VkBufferCreateInfo bufferCreateInfo = {};
+		bufferCreateInfo.sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO;
+		bufferCreateInfo.size = size;
+		// This buffer is used as a transfer source for the buffer copy
+		bufferCreateInfo.usage = VK_BUFFER_USAGE_TRANSFER_SRC_BIT;
+		bufferCreateInfo.sharingMode = VK_SHARING_MODE_EXCLUSIVE;
+
+		VK_CHECK_RESULT(vkCreateBuffer(device, &bufferCreateInfo, nullptr, &handle));
+
+		// Get memory requirements for the staging buffer (alignment, memory type bits)
+		VkMemoryRequirements memReqs = {};
+		vkGetBufferMemoryRequirements(device, handle, &memReqs);
+
+		VkMemoryAllocateInfo memAllocInfo = {};
+		memAllocInfo.sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO;
+		memAllocInfo.pNext = NULL;
+		memAllocInfo.allocationSize = 0;
+		memAllocInfo.memoryTypeIndex = 0;
+		memAllocInfo.allocationSize = memReqs.size;
+		// Get memory type index for a host visible buffer
+		VkPhysicalDeviceMemoryProperties memProperties;
+		vkGetPhysicalDeviceMemoryProperties(VulkanDevice::Instance()->GetPhysicalDevice(), &memProperties);
+		memAllocInfo.memoryTypeIndex = GetMemoryTypeIndex(memReqs.memoryTypeBits, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT, memProperties);
+
+		VK_CHECK_RESULT(vkAllocateMemory(device, &memAllocInfo, nullptr, &memory));
+		VK_CHECK_RESULT(vkBindBufferMemory(device, handle, memory, 0));
+
+		if (data)
+		{
+			void* mapped = nullptr;
+			VK_CHECK_RESULT(vkMapMemory(device, memory, 0, memReqs.size, 0, &mapped));
+			Memory::MemCpy(mapped, data, size);
+			vkUnmapMemory(device, memory);
+		}
+		this->size = size;
+	}
+
+	void VulkanStagingBuffer::Update(void* data, uint64 size)
+	{
+		RYUJIN_ASSERT(this->size >= size, *String::Printf("Staging buffer is %d bytes, tried to copy %d bytes", this->size, size));
+		VkDevice device = VulkanDevice::Instance()->GetDevice();
+		void* mapped = nullptr;
+		VK_CHECK_RESULT(vkMapMemory(device, memory, 0, size, 0, &mapped));
+		Memory::MemCpy(mapped, data, size);
+		vkUnmapMemory(device, memory);
+	}
 }

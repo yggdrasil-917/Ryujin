@@ -170,6 +170,8 @@ namespace Ryujin
 		//uint32 QueryDeviceCapFeature(const DeviceCapFeature feature);
 		void PrintDeviceInfo(const bool bPrintEverything = false);
 
+		uint32 GetMemoryTypeIndex(uint32 typeBits, VkMemoryPropertyFlags properties);
+
 		FORCEINLINE void CacheWindowReference(Window* inWindow) { windowRef = inWindow; }
 		FORCEINLINE VkDevice GetDevice() const { return device; }
 		FORCEINLINE VkPhysicalDevice GetPhysicalDevice() const { return physicalDevice; }

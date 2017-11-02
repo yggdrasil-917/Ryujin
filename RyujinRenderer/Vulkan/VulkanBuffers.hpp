@@ -53,6 +53,21 @@ namespace Ryujin
 		FORCEINLINE VkBuffer GetHandle() const { return handle; }
 	};
 
+	class RENDER_API VulkanStagingBuffer
+	{
+	private:
+		VkBuffer handle;
+		VkDeviceMemory memory;
+		uint64 size;
+
+	public:
+		~VulkanStagingBuffer();
+		void Create(const void* data, uint64 size);
+		void Update(void* data, uint64 size);
+
+		FORCEINLINE VkBuffer GetHandle() const { return handle; }
+	};
+
 	//class RENDER_API ConstantBuffer
 	//{
 	//public:

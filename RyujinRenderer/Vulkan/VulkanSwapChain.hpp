@@ -8,6 +8,9 @@ namespace Ryujin
 {
 	class RENDER_API VulkanBackBufferImage
 	{
+	private:
+
+	public:
 
 	};
 

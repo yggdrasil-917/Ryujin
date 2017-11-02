@@ -15,8 +15,9 @@ namespace Ryujin
         uint16 height;
         uint16 depth;
         uint16 arraySize;
-        bool bIsCubemap;
-        PixelFormat format;
+		PixelFormat format;
+		bool bIsCubemap;
+		bool bHasMips;
         
     public:
         VIRTUAL ~TextureBase() {}
@@ -24,5 +25,6 @@ namespace Ryujin
         FORCEINLINE uint16 GetWidth() const { return width; }
         FORCEINLINE uint16 GetHeight() const { return height; }
         FORCEINLINE uint16 GetDepth() const { return depth; }
+		FORCEINLINE uint32 GetMipCount() const { return bHasMips ? MathUtils::Log2(MathUtils::Max(width, height)) + 1 : 1; }
     };
 }

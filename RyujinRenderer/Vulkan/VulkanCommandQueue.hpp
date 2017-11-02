@@ -9,10 +9,11 @@ namespace Ryujin
 	{
 	private:
 		VkQueue handle;
+		VkCommandPool cmdBufferPool;
 
 	public:
 
-		void Create() {}
+		void Create();
 		VulkanCommandBuffer* NewCommandBuffer() { return nullptr; }
 		FORCEINLINE VkQueue GetHandle() const { return handle; }
 	};

@@ -24,8 +24,14 @@ extern PFN_vkFreeCommandBuffers vkFreeCommandBuffers;
 extern PFN_vkDestroyCommandPool vkDestroyCommandPool;
 extern PFN_vkQueueSubmit vkQueueSubmit;
 extern PFN_vkQueueWaitIdle vkQueueWaitIdle;
+extern PFN_vkCreateImage vkCreateImage;
 extern PFN_vkCreateImageView vkCreateImageView;
+extern PFN_vkGetImageMemoryRequirements vkGetImageMemoryRequirements;
+extern PFN_vkBindImageMemory vkBindImageMemory;
 extern PFN_vkDestroyImageView vkDestroyImageView;
+extern PFN_vkGetPhysicalDeviceFormatProperties vkGetPhysicalDeviceFormatProperties;
+extern PFN_vkCreateSampler vkCreateSampler;
+extern PFN_vkDestroySampler vkDestroySampler;
 
 extern PFN_vkCreateSwapchainKHR vkCreateSwapchainKHR;
 extern PFN_vkDestroySwapchainKHR vkDestroySwapchainKHR;

@@ -1093,4 +1093,23 @@ namespace Ryujin
 			Debugf(Renderer, "Memory: %.2f gigs", (float)memoryProperties.memoryHeaps[0].size / (1024.0f * 1024.0f * 1024.f));
 		}
 	}
+
+	uint32 VulkanDevice::GetMemoryTypeIndex(uint32 typeBits, VkMemoryPropertyFlags properties)
+	{
+		// Iterate over all memory types available for the device used in this example
+		for (uint32 i = 0; i < memoryProperties.memoryTypeCount; i++)
+		{
+			if ((typeBits & 1) == 1)
+			{
+				if ((memoryProperties.memoryTypes[i].propertyFlags & properties) == properties)
+				{
+					return i;
+				}
+			}
+			typeBits >>= 1;
+		}
+
+		RYUJIN_ASSERT(0, "Could not find a suitable memory type!");
+		return 0;
+	}
 }

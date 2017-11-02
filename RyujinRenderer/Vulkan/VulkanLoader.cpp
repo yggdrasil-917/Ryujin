@@ -33,8 +33,14 @@ namespace Ryujin
 	PFN_vkDestroyCommandPool vkDestroyCommandPool = nullptr;
 	PFN_vkQueueSubmit vkQueueSubmit = nullptr;
 	PFN_vkQueueWaitIdle vkQueueWaitIdle = nullptr;
+	PFN_vkCreateImage vkCreateImage = nullptr;
 	PFN_vkCreateImageView vkCreateImageView = nullptr;
+	PFN_vkGetImageMemoryRequirements vkGetImageMemoryRequirements = nullptr;
+	PFN_vkBindImageMemory vkBindImageMemory = nullptr;
 	PFN_vkDestroyImageView vkDestroyImageView = nullptr;
+	PFN_vkGetPhysicalDeviceFormatProperties vkGetPhysicalDeviceFormatProperties = nullptr;
+	PFN_vkCreateSampler vkCreateSampler = nullptr;
+	PFN_vkDestroySampler vkDestroySampler = nullptr;
 
 	PFN_vkCreateSwapchainKHR vkCreateSwapchainKHR = nullptr;
 	PFN_vkDestroySwapchainKHR vkDestroySwapchainKHR = nullptr;
@@ -124,8 +130,14 @@ namespace Ryujin
 		LoadVulkanFunction(vulkanModule, vkFreeCommandBuffers);
 		LoadVulkanFunction(vulkanModule, vkDestroyCommandPool);
 		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceSurfaceCapabilitiesKHR);
+		LoadVulkanFunction(vulkanModule, vkCreateImage);
 		LoadVulkanFunction(vulkanModule, vkCreateImageView);
+		LoadVulkanFunction(vulkanModule, vkBindImageMemory);
+		LoadVulkanFunction(vulkanModule, vkGetImageMemoryRequirements);
 		LoadVulkanFunction(vulkanModule, vkDestroyImageView);
+		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceFormatProperties);
+		LoadVulkanFunction(vulkanModule, vkCreateSampler);
+		LoadVulkanFunction(vulkanModule, vkDestroySampler);
 
 		LoadVulkanFunction(vulkanModule, vkCreateSwapchainKHR);
 		LoadVulkanFunction(vulkanModule, vkDestroySwapchainKHR);
