@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		3pYy8Zd9sqjPUAu1U2rp5WodFVo=
+		emZUleGzZYBGXJZXIeNAvRPsdKs=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
@@ -75,28 +75,28 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			TcxkrSRkyC6AHJbBcIv5BR7w6As=
+			uZOi2fb05alFfeQVJma1rvzoBG4=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"4dcc64ad2464c82e801c96c1708bf9051ef0e80b"</string>
+			<string>cdhash H"b993a2d9f6f4e5a9457de4152666b5aefce8046e"</string>
 		</dict>
 		<key>Frameworks/libRyujinExtensions_d.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			wE/U9H0RvNFAeUpk4LSgn2eqxqw=
+			u1/a+qK/GhVDSUPeTeQQ6wFOu9U=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"c04fd4f47d11bcd140794a64e0b4a09f67aac6ac"</string>
+			<string>cdhash H"bb5fdafaa2bf1a15434943de4de410eb014ebbd5"</string>
 		</dict>
 		<key>Frameworks/libRyujinRendererMetal_d.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			wej7PPifqhkiaiX1OVi7tEO+gNY=
+			x9qo6Xny4FZ41ZKC5FIOzjyTmQM=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"c1e8fb3cf89faa19226a25f53958bbb443be80d6"</string>
+			<string>cdhash H"c7daa8e979f2e05678d59282e4520ece3c939903"</string>
 		</dict>
 		<key>Frameworks/libtbb.dylib</key>
 		<dict>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uSO1LjTl5c8ZSbK8s7iUC4bfLjf9RjBRVCZXU5TbS1I=
+			m7gGvTU2pRrNK89HcZ95nNQ8IDHnnC7dkItiKebbAHU=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>

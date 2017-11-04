@@ -112,8 +112,7 @@
 				473CE7EB1F85BBA400AD6D56 /* PlayerController.hpp */,
 				473CE7EF1F87384900AD6D56 /* PlayerController.cpp */,
 			);
-			name = Controller;
-			path = "New Group";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4784BDF11E1A99F8006A5A16 = {
