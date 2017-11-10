@@ -170,7 +170,8 @@ namespace Ryujin
         if (bIsSplashScreen)
         {
             RyujinSplashWindow* nsWindow = (RyujinSplashWindow*)windowHandle;
-            [nsWindow release];
+            [nsWindow close];
+//            [nsWindow release];
         }
         else
         {
