@@ -129,7 +129,7 @@ namespace Ryujin
         GfxEncoderPtr encoder(commandBuffer->NewGfxEncoderFromDescriptor(desc));
         encoder->PushDebugGroup("Skybox");
         encoder->SetPipelineState(pso);
-        encoder->SetDepthStencilState(CompareFunction::CF_LessEqual, false);
+        encoder->SetDepthStencilState(CompareFunction::CF_Never, false);
         encoder->SetVertexBuffer(boxVb, 0, VERTEX_BUFFER_SLOT);
         encoder->SetVertexConstantBuffer(frameCb, 0, FRAME_CB_SLOT);
         encoder->SetFragmentTexture(texture, 0);
