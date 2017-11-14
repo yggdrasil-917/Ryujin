@@ -42,6 +42,9 @@ namespace Ryujin
 	PFN_vkCreateSampler vkCreateSampler = nullptr;
 	PFN_vkDestroySampler vkDestroySampler = nullptr;
 
+	PFN_vkDestroyDescriptorPool vkDestroyDescriptorPool = nullptr;
+	PFN_vkCreateDescriptorPool vkCreateDescriptorPool = nullptr;
+
 	PFN_vkCreateSwapchainKHR vkCreateSwapchainKHR = nullptr;
 	PFN_vkDestroySwapchainKHR vkDestroySwapchainKHR = nullptr;
 	PFN_vkGetSwapchainImagesKHR vkGetSwapchainImagesKHR = nullptr;
@@ -138,6 +141,9 @@ namespace Ryujin
 		LoadVulkanFunction(vulkanModule, vkGetPhysicalDeviceFormatProperties);
 		LoadVulkanFunction(vulkanModule, vkCreateSampler);
 		LoadVulkanFunction(vulkanModule, vkDestroySampler);
+
+		LoadVulkanFunction(vulkanModule, vkDestroyDescriptorPool);
+		LoadVulkanFunction(vulkanModule, vkCreateDescriptorPool);
 
 		LoadVulkanFunction(vulkanModule, vkCreateSwapchainKHR);
 		LoadVulkanFunction(vulkanModule, vkDestroySwapchainKHR);

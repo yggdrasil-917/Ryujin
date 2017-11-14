@@ -13,6 +13,8 @@ namespace Ryujin
 
 	public:
 		VIRTUAL ~VulkanPipelineState();
+
+		FORCEINLINE VkPipeline GetHandle() const { return handle; }
 	};
 
 	class RENDER_API VulkanGfxPipelineState : public VulkanPipelineState

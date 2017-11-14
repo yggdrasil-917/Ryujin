@@ -40,6 +40,8 @@
     <ClCompile Include="Vulkan\VulkanBuffers.cpp" />
     <ClCompile Include="Vulkan\VulkanCommandBuffer.cpp" />
     <ClCompile Include="Vulkan\VulkanCommandEncoder.cpp" />
+    <ClCompile Include="Vulkan\VulkanCommandQueue.cpp" />
+    <ClCompile Include="Vulkan\VulkanDescriptorPool.cpp" />
     <ClCompile Include="Vulkan\VulkanDevice.cpp" />
     <ClCompile Include="Vulkan\VulkanLoader.cpp" />
     <ClCompile Include="Vulkan\VulkanPipelineState.cpp" />
@@ -87,6 +89,7 @@
     <ClInclude Include="Vulkan\VulkanCommandBuffer.hpp" />
     <ClInclude Include="Vulkan\VulkanCommandEncoder.hpp" />
     <ClInclude Include="Vulkan\VulkanCommandQueue.hpp" />
+    <ClInclude Include="Vulkan\VulkanDescriptorPool.hpp" />
     <ClInclude Include="Vulkan\VulkanDevice.hpp" />
     <ClInclude Include="Vulkan\VulkanPipelineState.hpp" />
     <ClInclude Include="Vulkan\VulkanPipelineStateConfig.hpp" />

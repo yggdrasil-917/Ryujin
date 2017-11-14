@@ -2,6 +2,7 @@
 
 
 #include "VulkanBase.hpp"
+#include "VulkanSwapChain.hpp"
 //#include "RyujinCore/Logger/Logger.hpp"
 #include "RyujinCore/Containers/DynamicArray.hpp"
 #include "../Renderer/Buffer.hpp"
@@ -73,11 +74,11 @@ namespace Ryujin
 		DynamicArray<VkExtensionProperties> extensions;
 	};
 
-	struct SwapChainBuffer
-	{
-		VkImage image;
-		VkImageView view;
-	};
+	//struct SwapChainBuffer
+	//{
+	//	VkImage image;
+	//	VkImageView view;
+	//};
 
 	class RENDER_API VulkanDevice
 	{
@@ -87,7 +88,7 @@ namespace Ryujin
 		VkInstance instance;
 		VkDevice device;
 		VkSwapchainKHR swapChain;
-		DynamicArray<SwapChainBuffer> swapChainBuffers;
+		DynamicArray<VulkanSwapChain::SwapChainBuffer> swapChainBuffers;
 		VkSurfaceFormatKHR swapChainFormat;
 		VkQueue presentQueue;
 		DynamicArray<VkCommandBuffer> presentCmdBuffers;
@@ -177,5 +178,7 @@ namespace Ryujin
 		FORCEINLINE VkPhysicalDevice GetPhysicalDevice() const { return physicalDevice; }
 		FORCEINLINE class VulkanCommandQueue* GetImmediateCmdQueue() { return commandQueue; }
 		FORCEINLINE class VulkanSwapChain* GetSwapChain() const { return swapChain2; }
+		FORCEINLINE VkSurfaceKHR GetSurface() const { return surface; }
+		FORCEINLINE VkSemaphore GetPresentCompleteSem() const { return presentComplete; }
 	};
 }

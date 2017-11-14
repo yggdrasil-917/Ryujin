@@ -8,18 +8,32 @@ namespace Ryujin
 {
 	class RENDER_API VulkanBackBufferImage
 	{
-	private:
-
 	public:
-
+		uint32 imageIndex = 0;
 	};
 
 	class RENDER_API VulkanSwapChain : public SwapChainBase
 	{
 	public:
-		VIRTUAL ~VulkanSwapChain() {}
+		struct SwapChainBuffer
+		{
+			VkImage image;
+			VkImageView view;
+		};
 
-		void Create(uint16 inWidth, uint16 inHeight, uint32 numImages);
+	private:
+		VkSurfaceKHR surface;
+		VkSwapchainKHR swapChain;
+		VkSurfaceFormatKHR swapChainFormat;
+		DynamicArray<SwapChainBuffer> swapChainBuffers;
+
+		bool CreateSurface(VkSurfaceKHR& surface);
+
+	public:
+		VIRTUAL ~VulkanSwapChain();
+
+		bool Create(uint16 inWidth, uint16 inHeight, uint32 numImages);
+		void Destroy();
 		VulkanBackBufferImage* GetNextImage();
 	};
 }

@@ -33,6 +33,9 @@ extern PFN_vkGetPhysicalDeviceFormatProperties vkGetPhysicalDeviceFormatProperti
 extern PFN_vkCreateSampler vkCreateSampler;
 extern PFN_vkDestroySampler vkDestroySampler;
 
+extern PFN_vkDestroyDescriptorPool vkDestroyDescriptorPool;
+extern PFN_vkCreateDescriptorPool vkCreateDescriptorPool;
+
 extern PFN_vkCreateSwapchainKHR vkCreateSwapchainKHR;
 extern PFN_vkDestroySwapchainKHR vkDestroySwapchainKHR;
 extern PFN_vkGetSwapchainImagesKHR vkGetSwapchainImagesKHR;
